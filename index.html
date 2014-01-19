@@ -1,127 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="MTracer : A trace-oriented monitoring platform, which is lightweight and efficiency, with a web-based frontend." />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>MTracer by mtracer</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>MTracer</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">MTracer</h1>
+        <p class="header">A trace-oriented monitoring platform, which is lightweight and efficiency, with a web-based frontend.</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mtracer/MTracer">View on GitHub</a>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/mtracer/MTracer/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/mtracer/MTracer/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/mtracer/MTracer">View On GitHub</a></li>
+        </ul>
 
-          <h1 id="project_title">MTracer</h1>
-          <h2 id="project_tagline">A trace-oriented monitoring platform, which is lightweight and efficiency, with a web-based frontend.</h2>
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/mtracer">mtracer</a></p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/mtracer/MTracer/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/mtracer/MTracer/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p align="center">--by Jingwen Zhou (E-mail: jwzhou at nudt dot edu dot cn)--</p>
+      </header>
+      <section>
+        <p align="center">E-mail: jwzhou@nudt.edu.cn</p><p>
+</p><div>• <a href="#Overview"> Overview </a><div>
+<div>• <a href="#Implemetation"> Implemetation </a>
+</div>
+<div>• <a href="#start"> Getting Start </a>
+</div>
+<div>      • <a href="#prepare"> 0. Prepare </a>
+</div>
+<div>      • <a href="#MTracer"> 1. Deploy MTracer </a>
+</div>
+<div>      • <a href="#MTracerViz"> 2. Deploy MTracer-Viz </a>
+</div>
+<div>      • <a href="#demo"> 3. Start Demo </a>
+</div>
+<hr>
+<a name="Overview"></a>
+<p></p>
+<h2>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h2>
 
-<p>        MTracer is a white box-based trace-oriented monitoring platform, which is lightweight and efficiency. MTracer adopts the client-server framework. The data are stored in database on the monitor server, where a paralell strategy and several optimizations are introduced to speed up the storing process. A web-based frontend for visualizing, called MTracer-Viz, is also provided, and some advanced functions are integrated in this frontend to do deeper data analyses.  More details of MTracer can be referred to corresponding paper "MTracer: a trace-oriented monitoring framework for medium-scale distributed systems".</p>
+<p>MTracer is a white box-based trace-oriented monitoring platform, which is <em>lightweight</em> and <em>efficiency</em>. MTracer adopts the client-server framework. The data are stored in database on the monitor server, where a paralell strategy and several optimizations are introduced to speed up the storing process. A web-based frontend for visualizing, called MTracer-Viz, is also provided, and some advanced functions are integrated in this frontend to do deeper data analyses.  More details of MTracer can be referred to corresponding paper "<em>MTracer: A Trace-Oriented Monitoring Framework for Medium-Scale Distributed Systems</em>".</p>
 
-<p>        We developed MTracer based on X-Trace [1], so many code files in this project are name with a "xtrace" inside. Data are stored in MySQL. The frontend is implemented with JSP and using GraphViz for visualization.</p>
+<p><br><a name="Implemetation"></a></p>
 
-<p></p><p>        In the rest, we use a demo to show the process of deploying MTracer and MTrace-Viz.</p><br><div>The machines we used are 3 VMs hosted on CloudStack with the OS of CentOS 6.3 64bit:</div>
+<p></p>
+<h2>
+<a name="implemetation" class="anchor" href="#implemetation"><span class="octicon octicon-link"></span></a>Implemetation</h2>
 
-<div>        &gt;MonitorServer: the monitor server on which the MTracer and MTracer-Viz are deployed.</div>
+<p>We implemented MTracer based on X-Trace [1]. So, many code files in this project are name with a "xtrace" inside. Data are stored in MySQL. The frontend is implemented with JSP and using GraphViz for visualization.</p>
 
-<div>        &gt;MonitorClient_1 and MonitorClient_2: the monitored nodes for deploying the chatting demo.</div><br><div>0.Prepare</div>
+<p><a name="start"></a><br></p>
 
-<div>        a. Upload MTracer and MTracer-Viz to MonitorServer:/root; upload MTracer to MonitorClient_1:/root and MonitorClient_2:/root;</div>
+<p></p>
+<h2>
+<a name="getting-start" class="anchor" href="#getting-start"><span class="octicon octicon-link"></span></a>Getting Start</h2>
 
-<div>        b. Shutdown the firewall on all 3 nodes</div>
+<div>The machines we used are 3 VMs hosted on CloudStack with the OS of CentOS 6.3 64bit:</div>
 
-<div>                # service iptables stop</div>
+<table border="1" cellspacing="0" cellpadding="3">
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>OS</th>
+<th>User</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>1</td>
+<td>MonitorServer</td>
+<td>CentOS 6.3 64bit</td>
+<td>root</td>
+<td>The monitor server on which the MTracer and MTracer-Viz are deployed.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>MonitorClient_1</td>
+<td>CentOS 6.3 64bit</td>
+<td>root</td>
+<td>The monitored nodes for deploying the demo.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>MonitorClient_2</td>
+<td>CentOS 6.3 64bit</td>
+<td>root</td>
+<td>The same as MonitorClient_1</td>
+</tr>
+</table>
+<p><a name="prepare"></a><br></p>
 
-<div>        c. Install JDK on all 3 nodes, we installed with jdk-7u11-linux-x64.tar.gz and JAVA_HOME=/usr/lib/jvm/jdk1.7.0_11.</div>
+<p></p>
+<h4>
+<a name="0-prepare" class="anchor" href="#0-prepare"><span class="octicon octicon-link"></span></a>0. Prepare</h4>
 
-<p><br></p><div>1.MTracer</div>
+<div>a. Upload MTracer and MTracer-Viz to MonitorServer:/root, and upload MTracer to MonitorClient_1:/root and MonitorClient_2:/root</div>
 
-<div>        a. Install MySQL and set user "root" with a password "root"</div>
+<div>b. Shutdown the firewall on all 3 nodes</div>
 
-<div>                # yum install mysql-server</div>
+<div>      • $ service iptables stop</div>
 
-<div>                # service mysqld start</div>
+<div>c. Install JDK on all 3 nodes, we installed with jdk-7u11-linux-x64.tar.gz and JAVA_HOME=/usr/lib/jvm/jdk1.7.0_11.</div>
 
-<div>                # mysqladmin -u root password root</div>
+<p><a name="MTracer"></a><br></p>
 
-<div>        b. Set the monitor server address</div>
+<p></p>
+<h4>
+<a name="1-deploy-mtracer" class="anchor" href="#1-deploy-mtracer"><span class="octicon octicon-link"></span></a>1. Deploy MTracer</h4>
 
-<div>                # vi MTracer/backend.sh</div>
+<div>a. Install MySQL and set user "root" with a password "root"</div>
 
-<div>                and set "UDPSOURCE=MonitorServer:7831" at about line 3</div><br><div>2.MTracer-Viz</div>
+<div>      • $ yum install mysql-server</div>
 
-<div>        a. Install GraphViz</div>
+<div>      • $ service mysqld start</div>
 
-<div>                # yum install graphviz</div>
+<div>      • $ mysqladmin -u root password root</div>
 
-<div>        b. Set JAVA_HOME</div>
+<div>b. Set the monitor server address</div>
 
-<div>                # vi MTracer-Viz/apache-tomcat-6.0.35/bin/catalina.sh</div>
+<div>      • $ vi MTracer/backend.sh</div>
 
-<div>                and set "JAVA_HOME=/usr/lib/jvm/jdk1.7.0_11" at about line 86</div>
+<div>      • and set UDPSOURCE=MonitorServer:7831 at about line 3</div>
 
-<div>        c. Set the directory of web</div>
+<p><a name="MTracerViz"></a><br></p>
 
-<div>                # vi /apache-tomcat-6.0.35/conf/server.xml</div>
+<p></p>
+<h4>
+<a name="2-deploy-mtracer-viz" class="anchor" href="#2-deploy-mtracer-viz"><span class="octicon octicon-link"></span></a>2. Deploy MTracer-Viz</h4>
 
-<div>                and set docBase="/root/MTracer-Viz/webapps" at about line 144</div>
+<div>a. Install GraphViz</div>
 
-<div>        d. Add flanagan.jar for supporting the diagnosis function</div>
+<div>      • $ yum install graphviz</div>
 
-<div>                # cp MTracer-Viz/webapps/WEB-INF/lib/flanagan.jar $JAVA_HOME/jre/lib/ext/</div><br><div>3.Test</div>
+<div>b. Set JAVA_HOME</div>
 
-<div>        a. Start MTracer</div>
+<div>      • $ vi MTracer-Viz/apache-tomcat-6.0.35/bin/catalina.sh</div>
 
-<div>                # sh MTracer/backend.sh &amp;</div>
+<div>      • and set JAVA_HOME=/usr/lib/jvm/jdk1.7.0_11 at about line 86</div>
 
-<div>        b. Start MTracer-Viz</div>
+<div>c. Set the directory of web</div>
 
-<div>                # sh MTracer-Viz/apache-tomcat-6.0.35/bin/startup.sh</div>
+<div>      • $ vi /apache-tomcat-6.0.35/conf/server.xml</div>
 
-<div>        c. Start demo server on MonitorClient_1</div>
+<div>      • and set  at about line 144</div>
 
-<div>                # java -Dxtrace.udpdest=MonitorServer:7831 -cp /root/MTracer/bin/ chatapp.Server</div>
+<div>d. Add flanagan.jar for supporting the diagnosis function</div>
 
-<div>                where xtrace.udpdest is the address of the monitor server</div>
+<div>      • $ cp MTracer-Viz/webapps/WEB-INF/lib/flanagan.jar $JAVA_HOME/jre/lib/ext/</div>
 
-<div>        d. Start demo client on MonitorClient_2</div>
+<p><a name="demo"></a><br></p>
 
-<div>                # java -Dxtrace.udpdest=MonitorServer:7831 -DserverAddress=MonitorClient_1 -cp /root/MTracer/bin/ chatapp.Client</div>
+<p></p>
+<h4>
+<a name="3-start-demo" class="anchor" href="#3-start-demo"><span class="octicon octicon-link"></span></a>3. Start Demo</h4>
 
-<div>                where serverAddress is the address of server in this chatting demo.</div>
+<div>a. Start MTracer</div>
 
-<div>        e. input some sentences on MonitorClient_2, where a sentence with word "bye" inside will terminal the demo.</div>
+<div>      • $ sh MTracer/backend.sh &amp;</div>
 
-<div>        f. Scan the collected traces and related information in local browser with a url of "http://MonitorServer:8080/"</div><br><div>Contact "jwzhou at nudt dot edu dot cn" if any problem about MTracer.</div><br><div>[1] R. Fonseca, G. Porter, R. H. Katz, S. Shenker, and I. Stoica, “X-Trace: A pervasive network tracing framework,” in Proc. of USENIX NSDI, 2007, pp. 271–284.</div>
+<div>b. Start MTracer-Viz</div>
+
+<div>      • $ sh MTracer-Viz/apache-tomcat-6.0.35/bin/startup.sh</div>
+
+<div>c. Start demo server on MonitorClient_1</div>
+
+<div>      • $ java -Dxtrace.udpdest=MonitorServer:7831 -cp /root/MTracer/bin/ chatapp.Server</div>
+
+<div>      • where xtrace.udpdest is the address of the monitor server</div>
+
+<div>d. Start demo client on MonitorClient_2</div>
+
+<div>      • $ java -Dxtrace.udpdest=MonitorServer:7831 -DserverAddress=MonitorClient_1 -cp /root/MTracer/bin/ chatapp.Client</div>
+
+<div>      • where serverAddress is the address of server in this chatting demo.</div>
+
+<div>e. input some sentences on MonitorClient_2, where a sentence with word "bye" inside will terminal the demo.</div>
+
+<div>f. Scan the collected traces and related information in local browser with a url of "http://MonitorServer:8080/"</div>
+
+<hr>
+<p>[1] R. Fonseca, G. Porter, R. H. Katz, S. Shenker, and I. Stoica, "X-Trace: A pervasive network tracing framework," in Proc. of USENIX NSDI, 2007, pp. 271-284.</p>
+
+<p>• Contact jwzhou@nudt.edu.cn if any problem about MTracer.</p>
+</div>
+</div>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">MTracer maintained by <a href="https://github.com/mtracer">mtracer</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-
-    
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
