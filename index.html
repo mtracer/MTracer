@@ -107,13 +107,13 @@
 <h4>
 <a name="0-prepare" class="anchor" href="#0-prepare"><span class="octicon octicon-link"></span></a>0. Prepare</h4>
 
-<div>a. Upload MTracer and MTracer-Viz to MonitorServer:/root, and upload MTracer to MonitorClient_1:/root and MonitorClient_2:/root</div>
+<div>a) Upload MTracer and MTracer-Viz to MonitorServer:/root, and upload MTracer to MonitorClient_1:/root and MonitorClient_2:/root</div>
 
-<div>b. Shutdown the firewall on all 3 nodes</div>
+<div>b) Shutdown the firewall on all 3 nodes</div>
 
 <div>      • $ service iptables stop</div>
 
-<div>c. Install JDK on all 3 nodes, we installed with jdk-7u11-linux-x64.tar.gz and JAVA_HOME=/usr/lib/jvm/jdk1.7.0_11.</div>
+<div>c) Install JDK on all 3 nodes, we installed with jdk-7u11-linux-x64.tar.gz and JAVA_HOME=/usr/lib/jvm/jdk1.7.0_11.</div>
 
 <p><a name="MTracer"></a><br></p>
 
@@ -121,7 +121,7 @@
 <h4>
 <a name="1-deploy-mtracer" class="anchor" href="#1-deploy-mtracer"><span class="octicon octicon-link"></span></a>1. Deploy MTracer</h4>
 
-<div>a. Install MySQL and set user "root" with a password "root"</div>
+<div>a) Install MySQL and set user "root" with a password "root"</div>
 
 <div>      • $ yum install mysql-server</div>
 
@@ -129,7 +129,7 @@
 
 <div>      • $ mysqladmin -u root password root</div>
 
-<div>b. Set the monitor server address</div>
+<div>b) Set the monitor server address</div>
 
 <div>      • $ vi MTracer/backend.sh</div>
 
@@ -141,23 +141,23 @@
 <h4>
 <a name="2-deploy-mtracer-viz" class="anchor" href="#2-deploy-mtracer-viz"><span class="octicon octicon-link"></span></a>2. Deploy MTracer-Viz</h4>
 
-<div>a. Install GraphViz</div>
+<div>a) Install GraphViz</div>
 
 <div>      • $ yum install graphviz</div>
 
-<div>b. Set JAVA_HOME</div>
+<div>b) Set JAVA_HOME</div>
 
 <div>      • $ vi MTracer-Viz/apache-tomcat-6.0.35/bin/catalina.sh</div>
 
 <div>      • and set JAVA_HOME=/usr/lib/jvm/jdk1.7.0_11 at about line 86</div>
 
-<div>c. Set the directory of web</div>
+<div>c) Set the directory of web</div>
 
 <div>      • $ vi /apache-tomcat-6.0.35/conf/server.xml</div>
 
 <div>      • and set docBase="/root/MTracer-Viz/webapps" at about line 144</div>
 
-<div>d. Add flanagan.jar for supporting the diagnosis function</div>
+<div>d) Add flanagan.jar for supporting the diagnosis function</div>
 
 <div>      • $ cp MTracer-Viz/webapps/WEB-INF/lib/flanagan.jar $JAVA_HOME/jre/lib/ext/</div>
 
@@ -167,29 +167,29 @@
 <h4>
 <a name="3-start-demo" class="anchor" href="#3-start-demo"><span class="octicon octicon-link"></span></a>3. Start Demo</h4>
 
-<div>a. Start MTracer</div>
+<div>a) Start MTracer</div>
 
 <div>      • $ sh MTracer/backend.sh &amp;</div>
 
-<div>b. Start MTracer-Viz</div>
+<div>b) Start MTracer-Viz</div>
 
 <div>      • $ sh MTracer-Viz/apache-tomcat-6.0.35/bin/startup.sh</div>
 
-<div>c. Start demo server on MonitorClient_1</div>
+<div>c) Start demo server on MonitorClient_1</div>
 
 <div>      • $ java -Dxtrace.udpdest=MonitorServer:7831 -cp /root/MTracer/bin/ chatapp.Server</div>
 
 <div>      where xtrace.udpdest is the address of the monitor server</div>
 
-<div>d. Start demo client on MonitorClient_2</div>
+<div>d) Start demo client on MonitorClient_2</div>
 
 <div>      • $ java -Dxtrace.udpdest=MonitorServer:7831 -DserverAddress=MonitorClient_1 -cp /root/MTracer/bin/ chatapp.Client</div>
 
 <div>      where serverAddress is the address of server in this chatting demo.</div>
 
-<div>e. input some sentences on MonitorClient_2, where a sentence with word "bye" inside will terminal the demo.</div>
+<div>e) input some sentences on MonitorClient_2, where a sentence with word "bye" inside will terminal the demo.</div>
 
-<div>f. Scan the collected traces and related information in local browser with a url of "http://MonitorServer:8080/"</div>
+<div>f) Scan the collected traces and related information in local browser with a url of "http://MonitorServer:8080/"</div>
 
 <hr>
 <p>[1] R. Fonseca, G. Porter, R. H. Katz, S. Shenker, and I. Stoica, "X-Trace: A pervasive network tracing framework," in Proc. of USENIX NSDI, 2007, pp. 271-284.</p>
