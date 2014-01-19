@@ -1,0 +1,207 @@
+/*
+ *
+*/
+package edu.berkeley.xtrace;
+
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+import java.lang.management.ManagementFactory;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.Random;
+import java.lang.Math;
+
+//import edu.berkeley.xtrace.*;
+import edu.berkeley.xtrace.reporting.*;
+
+public class MyXTraceContext {
+	private static String hostname = null;//本机名
+	private static long fatherID=-1L;//父节点ID
+	private static long localID=-1L;//本机ID
+	private static long transTimeStamp=-1L;//转换时间
+	private static long localTimeStamp=-1L;//本操作开始时间，即子节点的转换时间
+	private static long taskID=-1L;//task ID
+	
+	public static long getLocalID()//获取本机ID
+	{
+		return localID;
+	}
+	public static void setLocalID(long id)
+	{
+		localID=id;
+	}
+	public static long getFatherID()//获取本机ID
+	{
+		return fatherID;
+	}
+	public static void setFatherID(long id)
+	{
+		fatherID=id;
+	}
+	public static long getTransTimeStamp()//获取本机ID
+	{
+		return transTimeStamp;
+	}
+	public static void setTransTimeStamp(long time)
+	{
+		transTimeStamp=time;
+	}
+	public static void setTaskID(long id)
+	{
+		taskID=id;
+	}
+	public static long getTaskID()
+	{
+		return taskID;
+	}
+	public static long getLocalTimeStamp()
+	{
+		return localTimeStamp;
+	}
+	public static void setLocalTimeStamp(long time)
+	{
+		localTimeStamp=time;
+	}
+	public static void reset()
+	{
+		setFatherID(-1L);
+		setTransTimeStamp(-1L);//转换时间
+	}
+	public static String getHostname()
+	{
+		if(hostname==null)
+		{
+			try {
+				hostname = InetAddress.getLocalHost().getHostName();
+			} catch (UnknownHostException e) {
+				hostname = "unknown";
+			}
+		}
+		return hostname;
+	}
+	public static void setHostname(String host)
+	{
+		hostname=host;
+	}
+	public static long genNewID()//生成新ID
+	{
+		int processId = ManagementFactory.getRuntimeMXBean().getName().hashCode();
+		if(hostname==null)
+		{
+			try {
+				hostname = InetAddress.getLocalHost().getHostName();
+			} catch (UnknownHostException e) {
+				hostname = "unknown";
+			}
+		}
+		int hostid=hostname.hashCode();
+		long threadid=Thread.currentThread().getId();
+		Random r=new Random(processId
+				+ System.nanoTime()
+				+ threadid
+				+ hostid);
+		return Math.abs(r.nextLong());
+		
+	}
+	//send fatherNode info
+	public static void writeFatherInfo(DataOutput out, long timestamp) throws IOException {
+		out.writeLong(getLocalID());
+		out.writeLong(timestamp);
+		out.writeLong(getTaskID());
+	}
+	//recv fatherNode info
+	public static void readFatherInfo(DataInput in) throws IOException {
+		setFatherID(in.readLong());
+		setTransTimeStamp(in.readLong());
+		setTaskID(in.readLong());
+	}
+	public static void startTrace()
+	{
+		setTaskID(genNewID());
+		setFatherID(0L);
+		setLocalID(genNewID());
+		setTransTimeStamp(0L);
+		Report report=createReport("task start",true);
+		report.put("agent", "Client");
+		report.put("TaskID", String.valueOf(getTaskID()));
+		//task结束时间不好获取，因为其结束时间应该在所有操作完成之后，所以将其设为无穷大
+		//这样对时间先后的逻辑关系没影响
+		report.put("EndTime", String.valueOf(Long.MAX_VALUE));
+		Reporter.getReporter().sendReport(report);
+	}
+	
+	public static boolean isValid()
+	{
+		return (fatherID>=0)&&(localID>=0);
+	}
+	
+	public static Report createReport(String agent, String opname) {
+		return createReport(opname, false);
+	}
+	public static long getCurTime()
+	{
+		return System.currentTimeMillis();
+	}
+	public static Report createReport(String opname,boolean ifTrans) {
+		if(ifTrans)
+			setLocalID(genNewID());
+		if(getLocalID()<0)
+			setLocalID(genNewID());
+		if(!isValid())
+			return null;
+		
+		Report report = new Report();
+		report.put("TID", String.valueOf(getLocalID()));
+		report.put("OperationName", opname);
+		report.put("Source", getHostname());
+		if(ifTrans)
+		{
+			report.put("TransferTimestamp", String.valueOf(getTransTimeStamp()));
+			report.put("fatherID", String.valueOf(getFatherID()));
+		}
+		long time=getCurTime();
+		setLocalTimeStamp(time);
+		//将开始时间放在最后记录，尽量靠近要记录的操作，减小误差
+		//至于后面logStart的再次封装带来的误差应该较小
+		report.put("StartTime", String.valueOf(time));
+		
+		return report;
+	}
+	public static void sendReport(Report report)
+	{
+		if(report==null)
+			return;
+		long time = getCurTime();
+		//将结束时间放在最先记录，尽量靠近要记录的操作，减小误差
+		//至于后面logEnd的再次封装带来的误差应该较小
+		report.put("EndTime", String.valueOf(time));
+		Reporter.getReporter().sendReport(report);
+	}
+	
+	public static Report logStart(String agent,String opname)
+	{
+		return logStart(agent, opname, false);
+	}
+	public static Report logStart(String agent,String opname,boolean ifTrans)
+	{
+		Report report=createReport(opname,ifTrans);
+		if(report==null)
+			return null;
+		report.put("agent", agent);
+		//report.put("tag", "part");//这只是记录一个函数的开始，并不是整个部分
+		report.put("TaskID", String.valueOf(getTaskID()));//还是弄一个taskID吧
+		//Reporter.getReporter().sendReport(report);
+		return report;
+	}
+	
+	public static void logEnd(Report report,String description)
+	{
+		if(report==null)
+			return;
+		//report.remove("tag");
+		//report.put("tag", "whole");
+		report.put("Description", description);//
+		sendReport(report);
+	}
+}

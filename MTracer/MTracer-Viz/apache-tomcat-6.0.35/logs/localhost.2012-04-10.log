@@ -1,0 +1,96 @@
+Apr 10, 2012 3:59:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 10, 2012 3:59:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 10, 2012 4:16:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 10, 2012 4:16:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 10, 2012 4:32:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 10, 2012 4:32:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 10, 2012 4:48:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 10, 2012 4:48:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 10, 2012 5:03:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 10, 2012 5:03:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 10, 2012 5:19:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 10, 2012 5:19:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 10, 2012 5:31:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 10, 2012 5:31:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 10, 2012 5:45:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 10, 2012 5:45:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 10, 2012 5:54:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 10, 2012 5:54:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 10, 2012 6:12:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 10, 2012 6:12:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 10, 2012 6:22:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 10, 2012 6:22:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 10, 2012 7:46:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 10, 2012 7:46:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 10, 2012 9:16:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 10, 2012 9:16:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 10, 2012 9:16:21 PM org.apache.catalina.session.StandardSession writeObject
+WARNING: Cannot serialize session attribute abnormalTaskInfo for session 5728781CD1D2317FB0D5CA0D72179176
+java.io.NotSerializableException: edu.nudt.xtrace.DiagnosisResult
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1180)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:346)
+	at java.util.ArrayList.writeObject(ArrayList.java:710)
+	at sun.reflect.GeneratedMethodAccessor28.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at java.io.ObjectStreamClass.invokeWriteObject(ObjectStreamClass.java:975)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1480)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1416)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1174)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:346)
+	at org.apache.catalina.session.StandardSession.writeObject(StandardSession.java:1585)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1015)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:528)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:469)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:678)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4882)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1110)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1110)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:468)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:604)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:788)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:662)
+	at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:706)
+
+Apr 10, 2012 9:27:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 10, 2012 9:27:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 10, 2012 9:53:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 10, 2012 9:53:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Apr 10, 2012 10:07:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Apr 10, 2012 10:07:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Apr 10, 2012 10:13:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Apr 10, 2012 10:13:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()

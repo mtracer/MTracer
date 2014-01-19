@@ -1,0 +1,2360 @@
+2012-11-1 8:20:47 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.IllegalArgumentException: Line 8: the number of scores in this row, 8, does not equal the total number of items, 21
+	at flanagan.analysis.Scores.readScoresAsRowPerPersonCore(Scores.java:1784)
+	at flanagan.analysis.Scores.readScoresAsRowPerPersonB(Scores.java:1630)
+	at org.apache.jsp.abnormalDiagnosis_jsp._jspService(abnormalDiagnosis_jsp.java:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 8:36:03 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.IllegalArgumentException: Line 8: the number of scores in this row, 8, does not equal the total number of items, 21
+	at flanagan.analysis.Scores.readScoresAsRowPerPersonCore(Scores.java:1784)
+	at flanagan.analysis.Scores.readScoresAsRowPerPersonB(Scores.java:1630)
+	at org.apache.jsp.abnormalDiagnosis_jsp._jspService(abnormalDiagnosis_jsp.java:99)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 8:43:09 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-11-1 8:43:09 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()
+2012-11-1 8:43:37 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-11-1 8:43:37 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-11-1 8:44:22 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-11-1 8:44:22 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()
+2012-11-1 8:45:40 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-11-1 8:45:40 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-11-1 8:45:43 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.IllegalArgumentException: You have entered only one score or measurement source - PCA is not meaningful
+	at flanagan.analysis.PCA.pca(PCA.java:205)
+	at flanagan.analysis.PCA.screePlot(PCA.java:513)
+	at flanagan.analysis.PCA.analysis(PCA.java:1226)
+	at org.apache.jsp.abnormalDiagnosis_jsp._jspService(abnormalDiagnosis_jsp.java:104)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 8:52:09 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-11-1 8:52:09 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()
+2012-11-1 9:32:48 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-11-1 9:32:48 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-11-1 9:32:54 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 28 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable title
+25: String[] opnames=null;
+26: try {
+27: 	int off = 0;int len = 50;
+28: 	Report title = new Report();
+29: 	List<TaskRecord> tasks=accessor.getTasksBySearch(condition, title, off, len);
+30: 	while(tasks.size()>0)
+31: 	{
+
+
+An error occurred at line: 37 in the jsp file: /abnormalDiagnosis.jsp
+trace cannot be resolved
+34: 		while (it.hasNext()) {
+35: 			TaskRecord task = it.next();
+36: 			String taskID = task.getTaskId();
+37: 			if(trace.findTopology(accessor.getConn(), taskID, String.valueOf(task.getDelay())) != null){
+38: 				trace.depthFirstSearchOrder();
+39: 				ArrayList<Report> reports = trace.getReports();
+40: 				double [] row = new double[reports.size()];
+
+
+An error occurred at line: 38 in the jsp file: /abnormalDiagnosis.jsp
+trace cannot be resolved
+35: 			TaskRecord task = it.next();
+36: 			String taskID = task.getTaskId();
+37: 			if(trace.findTopology(accessor.getConn(), taskID, String.valueOf(task.getDelay())) != null){
+38: 				trace.depthFirstSearchOrder();
+39: 				ArrayList<Report> reports = trace.getReports();
+40: 				double [] row = new double[reports.size()];
+41: 				int i=0;
+
+
+An error occurred at line: 39 in the jsp file: /abnormalDiagnosis.jsp
+trace cannot be resolved
+36: 			String taskID = task.getTaskId();
+37: 			if(trace.findTopology(accessor.getConn(), taskID, String.valueOf(task.getDelay())) != null){
+38: 				trace.depthFirstSearchOrder();
+39: 				ArrayList<Report> reports = trace.getReports();
+40: 				double [] row = new double[reports.size()];
+41: 				int i=0;
+42: 				for(i=0; i<reports.size();i++)
+
+
+An error occurred at line: 58 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable i
+55: 				}
+56: 				if(opnames==null){
+57: 					opnames = new String[reports.size()];
+58: 					for(int i=0;i<reports.size();i++){
+59: 						Report rep = reports.get(i);
+60: 						int index=-1;
+61: 						try{index = Integer.parseInt(rep.get("dfsorder").get(0));}catch(Exception e){opnames=null;break;}
+
+
+An error occurred at line: 73 in the jsp file: /abnormalDiagnosis.jsp
+Syntax error, insert "Finally" to complete TryStatement
+70: 		tasks=accessor.getTasksBySearch(condition, title, off, len);
+71: 	}
+72: }catch(Exception e){}
+73: }
+74: 
+75: //原始数据的预处理
+76: int colNum = metadata.get(0).length;
+
+
+An error occurred at line: 76 in the jsp file: /abnormalDiagnosis.jsp
+metadata cannot be resolved
+73: }
+74: 
+75: //原始数据的预处理
+76: int colNum = metadata.get(0).length;
+77: int rowNum = metadata.size();
+78: for(int i=0;i<opnames.length;i++)
+79: {
+
+
+An error occurred at line: 77 in the jsp file: /abnormalDiagnosis.jsp
+metadata cannot be resolved
+74: 
+75: //原始数据的预处理
+76: int colNum = metadata.get(0).length;
+77: int rowNum = metadata.size();
+78: for(int i=0;i<opnames.length;i++)
+79: {
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+
+
+An error occurred at line: 78 in the jsp file: /abnormalDiagnosis.jsp
+opnames.length cannot be resolved to a type
+75: //原始数据的预处理
+76: int colNum = metadata.get(0).length;
+77: int rowNum = metadata.size();
+78: for(int i=0;i<opnames.length;i++)
+79: {
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+81: 	opnames[i]=opnames[i].replaceAll("-","");
+
+
+An error occurred at line: 80 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+77: int rowNum = metadata.size();
+78: for(int i=0;i<opnames.length;i++)
+79: {
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+81: 	opnames[i]=opnames[i].replaceAll("-","");
+82: 	opnames[i]=opnames[i].replaceAll(":","");
+83: 	opnames[i]=opnames[i]+String.valueOf(i);
+
+
+An error occurred at line: 80 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+77: int rowNum = metadata.size();
+78: for(int i=0;i<opnames.length;i++)
+79: {
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+81: 	opnames[i]=opnames[i].replaceAll("-","");
+82: 	opnames[i]=opnames[i].replaceAll(":","");
+83: 	opnames[i]=opnames[i]+String.valueOf(i);
+
+
+An error occurred at line: 81 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+78: for(int i=0;i<opnames.length;i++)
+79: {
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+81: 	opnames[i]=opnames[i].replaceAll("-","");
+82: 	opnames[i]=opnames[i].replaceAll(":","");
+83: 	opnames[i]=opnames[i]+String.valueOf(i);
+84: }
+
+
+An error occurred at line: 81 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+78: for(int i=0;i<opnames.length;i++)
+79: {
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+81: 	opnames[i]=opnames[i].replaceAll("-","");
+82: 	opnames[i]=opnames[i].replaceAll(":","");
+83: 	opnames[i]=opnames[i]+String.valueOf(i);
+84: }
+
+
+An error occurred at line: 82 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+79: {
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+81: 	opnames[i]=opnames[i].replaceAll("-","");
+82: 	opnames[i]=opnames[i].replaceAll(":","");
+83: 	opnames[i]=opnames[i]+String.valueOf(i);
+84: }
+85: double[][] responses = new double[rowNum][colNum];
+
+
+An error occurred at line: 82 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+79: {
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+81: 	opnames[i]=opnames[i].replaceAll("-","");
+82: 	opnames[i]=opnames[i].replaceAll(":","");
+83: 	opnames[i]=opnames[i]+String.valueOf(i);
+84: }
+85: double[][] responses = new double[rowNum][colNum];
+
+
+An error occurred at line: 83 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+81: 	opnames[i]=opnames[i].replaceAll("-","");
+82: 	opnames[i]=opnames[i].replaceAll(":","");
+83: 	opnames[i]=opnames[i]+String.valueOf(i);
+84: }
+85: double[][] responses = new double[rowNum][colNum];
+86: for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 83 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+80: 	opnames[i]=opnames[i].replaceAll(" ","");
+81: 	opnames[i]=opnames[i].replaceAll("-","");
+82: 	opnames[i]=opnames[i].replaceAll(":","");
+83: 	opnames[i]=opnames[i]+String.valueOf(i);
+84: }
+85: double[][] responses = new double[rowNum][colNum];
+86: for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 87 in the jsp file: /abnormalDiagnosis.jsp
+metadata cannot be resolved
+84: }
+85: double[][] responses = new double[rowNum][colNum];
+86: for(int i=0;i<rowNum;i++)
+87: 	responses[i]=metadata.get(i);
+88: /*for(int j=0;j<colNum;j++){
+89: 	double 
+90: 	for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 193 in the generated java file
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: 195 in the generated java file
+out cannot be resolved to a variable
+
+An error occurred at line: 195 in the generated java file
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: 196 in the generated java file
+out cannot be resolved to a variable
+
+An error occurred at line: 196 in the generated java file
+out cannot be resolved
+
+An error occurred at line: 197 in the generated java file
+out cannot be resolved
+
+An error occurred at line: 198 in the generated java file
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: 198 in the generated java file
+_jspx_page_context cannot be resolved
+
+An error occurred at line: 200 in the generated java file
+Syntax error on token "finally", { expected
+
+An error occurred at line: 201 in the generated java file
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 9:34:27 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 72 in the jsp file: /abnormalDiagnosis.jsp
+Syntax error, insert "Finally" to complete TryStatement
+69: 		tasks=accessor.getTasksBySearch(condition, title, off, len);
+70: 	}
+71: }catch(Exception e){}
+72: }
+73: 
+74: //原始数据的预处理
+75: int colNum = metadata.get(0).length;
+
+
+An error occurred at line: 75 in the jsp file: /abnormalDiagnosis.jsp
+metadata cannot be resolved
+72: }
+73: 
+74: //原始数据的预处理
+75: int colNum = metadata.get(0).length;
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+
+
+An error occurred at line: 76 in the jsp file: /abnormalDiagnosis.jsp
+metadata cannot be resolved
+73: 
+74: //原始数据的预处理
+75: int colNum = metadata.get(0).length;
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+
+
+An error occurred at line: 77 in the jsp file: /abnormalDiagnosis.jsp
+opnames.length cannot be resolved to a type
+74: //原始数据的预处理
+75: int colNum = metadata.get(0).length;
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+
+
+An error occurred at line: 79 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+
+
+An error occurred at line: 79 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+
+
+An error occurred at line: 80 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+
+
+An error occurred at line: 80 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+
+
+An error occurred at line: 81 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+
+
+An error occurred at line: 81 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+
+
+An error occurred at line: 82 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+85: for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 82 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+85: for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 86 in the jsp file: /abnormalDiagnosis.jsp
+metadata cannot be resolved
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+85: for(int i=0;i<rowNum;i++)
+86: 	responses[i]=metadata.get(i);
+87: /*for(int j=0;j<colNum;j++){
+88: 	double 
+89: 	for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 192 in the generated java file
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: 194 in the generated java file
+out cannot be resolved to a variable
+
+An error occurred at line: 194 in the generated java file
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: 195 in the generated java file
+out cannot be resolved to a variable
+
+An error occurred at line: 195 in the generated java file
+out cannot be resolved
+
+An error occurred at line: 196 in the generated java file
+out cannot be resolved
+
+An error occurred at line: 197 in the generated java file
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: 197 in the generated java file
+_jspx_page_context cannot be resolved
+
+An error occurred at line: 199 in the generated java file
+Syntax error on token "finally", { expected
+
+An error occurred at line: 200 in the generated java file
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 9:34:53 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 72 in the jsp file: /abnormalDiagnosis.jsp
+Syntax error, insert "Finally" to complete TryStatement
+69: 		tasks=accessor.getTasksBySearch(condition, title, off, len);
+70: 	}
+71: }catch(Exception e){}
+72: }
+73: 
+74: //原始数据的预处理
+75: int colNum = metadata.get(0).length;
+
+
+An error occurred at line: 75 in the jsp file: /abnormalDiagnosis.jsp
+metadata cannot be resolved
+72: }
+73: 
+74: //原始数据的预处理
+75: int colNum = metadata.get(0).length;
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+
+
+An error occurred at line: 76 in the jsp file: /abnormalDiagnosis.jsp
+metadata cannot be resolved
+73: 
+74: //原始数据的预处理
+75: int colNum = metadata.get(0).length;
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+
+
+An error occurred at line: 77 in the jsp file: /abnormalDiagnosis.jsp
+opnames.length cannot be resolved to a type
+74: //原始数据的预处理
+75: int colNum = metadata.get(0).length;
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+
+
+An error occurred at line: 79 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+
+
+An error occurred at line: 79 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+76: int rowNum = metadata.size();
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+
+
+An error occurred at line: 80 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+
+
+An error occurred at line: 80 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+77: for(int i=0;i<opnames.length;i++)
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+
+
+An error occurred at line: 81 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+
+
+An error occurred at line: 81 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+78: {
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+
+
+An error occurred at line: 82 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+85: for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 82 in the jsp file: /abnormalDiagnosis.jsp
+opnames cannot be resolved to a variable
+79: 	opnames[i]=opnames[i].replaceAll(" ","");
+80: 	opnames[i]=opnames[i].replaceAll("-","");
+81: 	opnames[i]=opnames[i].replaceAll(":","");
+82: 	opnames[i]=opnames[i]+String.valueOf(i);
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+85: for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 86 in the jsp file: /abnormalDiagnosis.jsp
+metadata cannot be resolved
+83: }
+84: double[][] responses = new double[rowNum][colNum];
+85: for(int i=0;i<rowNum;i++)
+86: 	responses[i]=metadata.get(i);
+87: /*for(int j=0;j<colNum;j++){
+88: 	double 
+89: 	for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 192 in the generated java file
+Syntax error on token "catch", for expected
+
+An error occurred at line: 192 in the generated java file
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+
+An error occurred at line: 192 in the generated java file
+Syntax error, insert "; ; ) Statement" to complete ForStatement
+
+An error occurred at line: 192 in the generated java file
+Throwable cannot be resolved to a variable
+
+An error occurred at line: 199 in the generated java file
+Syntax error on token "finally", delete this token
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 9:35:08 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 192 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 202 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 203 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 9:42:48 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 48 in the jsp file: /abnormalDiagnosis.jsp
+Syntax error on token "float", invalid Expression
+45: 					int index=-1;
+46: 					try{index = Integer.parseInt(rep.get("dfsorder").get(0));}catch(Exception e){break;}
+47: 					float delay=-1;
+48: 					try{delay = float.parseFloat(rep.get("delay").get(0));}catch(Exception e){break;}
+49: 					if(index<0 || index>=reports.size() || delay<0)break;
+50: 					row[index]=delay;
+51: 				}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 9:57:24 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException
+	at flanagan.analysis.Scores.preprocessData(Scores.java:2423)
+	at flanagan.analysis.PCA.pca(PCA.java:208)
+	at org.apache.jsp.abnormalDiagnosis_jsp._jspService(abnormalDiagnosis_jsp.java:199)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 10:00:42 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.IllegalArgumentException: You have entered only one score or measurement source - PCA is not meaningful
+	at flanagan.analysis.PCA.pca(PCA.java:205)
+	at org.apache.jsp.abnormalDiagnosis_jsp._jspService(abnormalDiagnosis_jsp.java:199)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 10:05:59 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 130 in the jsp file: /abnormalDiagnosis.jsp
+The operator < is undefined for the argument type(s) int, double[]
+127: out.print("done<p>");
+128: 
+129: double[] eigenvalues = pca.orderedEigenValues();
+130: for(int i=0;i<eigenvalues;i++)
+131: 	out.print(eigenvalues[i]);
+132: out.print("<p>");
+133: double[][] eigenvectors = pca.eigenVectorsAsRows();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 10:19:28 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 137 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable numSelectedEigenvectors
+134: 	sumEigenvalues+=eigenvalues[i];
+135: int numSelectedEigenvectors=0;
+136: double partSumEigenvaules=0;
+137: for(int numSelectedEigenvectors=0;numSelectedEigenvectors<eigenvalues.length;numSelectedEigenvectors++){
+138: 	partSumEigenvaules+=eigenvalues[i];
+139: 	if(partSumEigenvaules/sumEigenvalues>=gama)
+140: 		break;
+
+
+An error occurred at line: 138 in the jsp file: /abnormalDiagnosis.jsp
+i cannot be resolved to a variable
+135: int numSelectedEigenvectors=0;
+136: double partSumEigenvaules=0;
+137: for(int numSelectedEigenvectors=0;numSelectedEigenvectors<eigenvalues.length;numSelectedEigenvectors++){
+138: 	partSumEigenvaules+=eigenvalues[i];
+139: 	if(partSumEigenvaules/sumEigenvalues>=gama)
+140: 		break;
+141: }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 10:19:42 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 138 in the jsp file: /abnormalDiagnosis.jsp
+i cannot be resolved to a variable
+135: int numSelectedEigenvectors=0;
+136: double partSumEigenvaules=0;
+137: for(numSelectedEigenvectors=0;numSelectedEigenvectors<eigenvalues.length;numSelectedEigenvectors++){
+138: 	partSumEigenvaules+=eigenvalues[i];
+139: 	if(partSumEigenvaules/sumEigenvalues>=gama)
+140: 		break;
+141: }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 11:07:10 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 181 in the jsp file: /abnormalDiagnosis.jsp
+Syntax error, insert "Finally" to complete TryStatement
+178: double Q=fai1*Q3;
+179: out.print(Q);
+180: out.print("done<p>");
+181: }
+182: 
+183: 
+184: //
+
+
+An error occurred at line: 281 in the generated java file
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: 283 in the generated java file
+out cannot be resolved to a variable
+
+An error occurred at line: 283 in the generated java file
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: 284 in the generated java file
+out cannot be resolved to a variable
+
+An error occurred at line: 284 in the generated java file
+out cannot be resolved
+
+An error occurred at line: 285 in the generated java file
+out cannot be resolved
+
+An error occurred at line: 286 in the generated java file
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: 286 in the generated java file
+_jspx_page_context cannot be resolved
+
+An error occurred at line: 288 in the generated java file
+Syntax error on token "finally", { expected
+
+An error occurred at line: 289 in the generated java file
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 11:39:41 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 156 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable i
+153: out.print("calculatint threshold...<p>");
+154: double[] lambda=new double[colNum-numSelectedEigenvectors-1];
+155: double[] projection=new double[rowNum];
+156: for(int i=0;i<rowNum;i++)
+157: 	projection[i]=0;
+158: for(int i=0;i<lambda.length;i++)
+159: {
+
+
+An error occurred at line: 158 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable i
+155: double[] projection=new double[rowNum];
+156: for(int i=0;i<rowNum;i++)
+157: 	projection[i]=0;
+158: for(int i=0;i<lambda.length;i++)
+159: {
+160: 	for(int j=0;j<rowNum;j++){
+161: 		double tmp=0;lambda[i]=0;
+
+
+An error occurred at line: 170 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable i
+167: 	}
+168: }
+169: double fai1=0,fai2=0,fai3=0;
+170: for(int i=0;i<lambda.length;i++)
+171: {
+172: 	fai1+=lambda[i];
+173: 	fai2+=lambda[i]*lambda[i];
+
+
+An error occurred at line: 190 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable i
+187: //diagnosis
+188: taskIDs=pca.originalPersonNames();
+189: out.print("start diagnosing...<p>");
+190: for(int i=0;i<rowNum;i++){
+191: 	out.print(projection[i]+"<p>");
+192: 	//if(projection[i]>Q)
+193: 		//out.print(taskIDs[i]);
+
+
+An error occurred at line: 293 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 303 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 304 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 11:40:29 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 156 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable i
+153: out.print("calculatint threshold...<p>");
+154: double[] lambda=new double[colNum-numSelectedEigenvectors-1];
+155: double[] projection=new double[rowNum];
+156: for(int i=0;i<rowNum;i++)
+157: 	projection[i]=0;
+158: for(int i=0;i<lambda.length;i++)
+159: {
+
+
+An error occurred at line: 158 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable i
+155: double[] projection=new double[rowNum];
+156: for(int i=0;i<rowNum;i++)
+157: 	projection[i]=0;
+158: for(int i=0;i<lambda.length;i++)
+159: {
+160: 	for(int j=0;j<rowNum;j++){
+161: 		double tmp=0;lambda[i]=0;
+
+
+An error occurred at line: 170 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable i
+167: 	}
+168: }
+169: double fai1=0,fai2=0,fai3=0;
+170: for(int i=0;i<lambda.length;i++)
+171: {
+172: 	fai1+=lambda[i];
+173: 	fai2+=lambda[i]*lambda[i];
+
+
+An error occurred at line: 190 in the jsp file: /abnormalDiagnosis.jsp
+Duplicate local variable i
+187: //diagnosis
+188: taskIDs=pca.originalPersonNames();
+189: out.print("start diagnosing...<p>");
+190: for(int i=0;i<rowNum;i++){
+191: 	out.print(projection[i]+"<p>");
+192: 	//if(projection[i]>Q)
+193: 		//out.print(taskIDs[i]);
+
+
+An error occurred at line: 293 in the generated java file
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: 303 in the generated java file
+Syntax error on token "}", delete this token
+
+An error occurred at line: 304 in the generated java file
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:30:31 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+colNum cannot be resolved to a variable
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+opnames.length cannot be resolved to a type
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 127 in the jsp file: /test.jsp
+opnames cannot be resolved to a variable
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+rowNum cannot be resolved to a variable
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+taskIDs.length cannot be resolved to a type
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 129 in the jsp file: /test.jsp
+taskIDs cannot be resolved to a variable
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+132: pca.useCovarianceMatrix();//使用协方差矩阵求解
+
+
+An error occurred at line: 166 in the jsp file: /test.jsp
+colNum cannot be resolved to a variable
+163: 
+164: //calculate the threshold
+165: out.print("calculatint threshold...<p>");
+166: double[] lambda=new double[colNum-numSelectedEigenvectors-1];
+167: double[] projection=new double[rowNum];
+168: for(int i=0;i<rowNum;i++)
+169: 	projection[i]=0;
+
+
+An error occurred at line: 167 in the jsp file: /test.jsp
+rowNum cannot be resolved to a variable
+164: //calculate the threshold
+165: out.print("calculatint threshold...<p>");
+166: double[] lambda=new double[colNum-numSelectedEigenvectors-1];
+167: double[] projection=new double[rowNum];
+168: for(int i=0;i<rowNum;i++)
+169: 	projection[i]=0;
+170: 
+
+
+An error occurred at line: 168 in the jsp file: /test.jsp
+rowNum cannot be resolved to a variable
+165: out.print("calculatint threshold...<p>");
+166: double[] lambda=new double[colNum-numSelectedEigenvectors-1];
+167: double[] projection=new double[rowNum];
+168: for(int i=0;i<rowNum;i++)
+169: 	projection[i]=0;
+170: 
+171: for(int i=0;i<lambda.length;i++)
+
+
+An error occurred at line: 173 in the jsp file: /test.jsp
+rowNum cannot be resolved to a variable
+170: 
+171: for(int i=0;i<lambda.length;i++)
+172: {
+173: 	for(int j=0;j<rowNum;j++){
+174: 		double tmp=0;lambda[i]=0;
+175: 		for(int k=0;k<colNum;k++)
+176: 			tmp+=responses[j][k]*eigenvectors[numSelectedEigenvectors+1+i][k];
+
+
+An error occurred at line: 175 in the jsp file: /test.jsp
+colNum cannot be resolved to a variable
+172: {
+173: 	for(int j=0;j<rowNum;j++){
+174: 		double tmp=0;lambda[i]=0;
+175: 		for(int k=0;k<colNum;k++)
+176: 			tmp+=responses[j][k]*eigenvectors[numSelectedEigenvectors+1+i][k];
+177: 		double tmp2=tmp*tmp;
+178: 		lambda[i]+=tmp2;
+
+
+An error occurred at line: 205 in the jsp file: /test.jsp
+taskIDs cannot be resolved to a variable
+202: out.print("done<p>");
+203: 
+204: //diagnosis
+205: taskIDs=pca.originalPersonNames();
+206: out.print("start diagnosing...<p>");
+207: for(int i=0;i<rowNum;i++){
+208: 	out.print(projection[i]+"<p>");
+
+
+An error occurred at line: 207 in the jsp file: /test.jsp
+rowNum cannot be resolved to a variable
+204: //diagnosis
+205: taskIDs=pca.originalPersonNames();
+206: out.print("start diagnosing...<p>");
+207: for(int i=0;i<rowNum;i++){
+208: 	out.print(projection[i]+"<p>");
+209: 	//if(projection[i]>Q)
+210: 		//out.print(taskIDs[i]);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:32:10 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+colNum cannot be resolved to a variable
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+opnames.length cannot be resolved to a type
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 127 in the jsp file: /test.jsp
+opnames cannot be resolved to a variable
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+rowNum cannot be resolved to a variable
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+taskIDs.length cannot be resolved to a type
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 129 in the jsp file: /test.jsp
+taskIDs cannot be resolved to a variable
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+132: pca.useCovarianceMatrix();//使用协方差矩阵求解
+
+
+An error occurred at line: 147 in the jsp file: /test.jsp
+Cannot invoke get(int) on the array type double[][]
+144: out.print("<p>");
+145: 
+146: for(int i=0;i<eigenvectors.length;i++)
+147: for(int j=0;j<eigenvectors.get(0).length;j++)
+148: 	out.print(eigenvectors[i]+" ");
+149: %>
+150: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:32:19 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+colNum cannot be resolved to a variable
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+opnames.length cannot be resolved to a type
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 127 in the jsp file: /test.jsp
+opnames cannot be resolved to a variable
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+rowNum cannot be resolved to a variable
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+taskIDs.length cannot be resolved to a type
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 129 in the jsp file: /test.jsp
+taskIDs cannot be resolved to a variable
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+132: pca.useCovarianceMatrix();//使用协方差矩阵求解
+
+
+An error occurred at line: 147 in the jsp file: /test.jsp
+Cannot invoke get(int) on the array type double[][]
+144: out.print("<p>");
+145: 
+146: for(int i=0;i<eigenvectors.length;i++)
+147: for(int j=0;j<eigenvectors.get(0).length;j++)
+148: 	out.print(eigenvectors[i]+" ");
+149: %>
+150: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:32:19 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: org.apache.jsp.test_jsp
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:134)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:66)
+	at org.apache.jasper.JspCompilationContext.load(JspCompilationContext.java:628)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:149)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:340)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:32:20 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: org.apache.jsp.test_jsp
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:134)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:66)
+	at org.apache.jasper.JspCompilationContext.load(JspCompilationContext.java:628)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:149)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:340)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:32:20 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: org.apache.jsp.test_jsp
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:134)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:66)
+	at org.apache.jasper.JspCompilationContext.load(JspCompilationContext.java:628)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:149)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:340)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:32:36 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+colNum cannot be resolved to a variable
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+opnames.length cannot be resolved to a type
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 127 in the jsp file: /test.jsp
+opnames cannot be resolved to a variable
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+rowNum cannot be resolved to a variable
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+taskIDs.length cannot be resolved to a type
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 129 in the jsp file: /test.jsp
+taskIDs cannot be resolved to a variable
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+132: pca.useCovarianceMatrix();//使用协方差矩阵求解
+
+
+An error occurred at line: 147 in the jsp file: /test.jsp
+Cannot invoke get(int) on the array type double[][]
+144: out.print("<p>");
+145: 
+146: for(int i=0;i<eigenvectors.length;i++)
+147: for(int j=0;j<eigenvectors.get(0).length;j++)
+148: 	out.print(eigenvectors[i]+" ");
+149: %>
+150: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:32:38 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: org.apache.jsp.test_jsp
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:134)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:66)
+	at org.apache.jasper.JspCompilationContext.load(JspCompilationContext.java:628)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:149)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:340)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:32:46 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+colNum cannot be resolved to a variable
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 126 in the jsp file: /test.jsp
+opnames.length cannot be resolved to a type
+123: PCA pca = new PCA();
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+
+
+An error occurred at line: 127 in the jsp file: /test.jsp
+opnames cannot be resolved to a variable
+124: pca.enterScoresAsRowPerPerson(responses);
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+rowNum cannot be resolved to a variable
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 128 in the jsp file: /test.jsp
+taskIDs.length cannot be resolved to a type
+125: pca.enterTitle("pca analysis");
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+
+
+An error occurred at line: 129 in the jsp file: /test.jsp
+taskIDs cannot be resolved to a variable
+126: if(colNum == opnames.length)
+127: 	pca.enterItemNames(opnames);
+128: if(rowNum == taskIDs.length)
+129: 	pca.enterPersonNames(taskIDs);
+130: //pca.readScoresAsRowPerPersonA(fileDir+"/tmp/metaDataForDiagnosis.txt");
+131: pca.setDenominatorToNminusOne();//方差的分母为n-1
+132: pca.useCovarianceMatrix();//使用协方差矩阵求解
+
+
+An error occurred at line: 147 in the jsp file: /test.jsp
+Cannot invoke get(int) on the array type double[][]
+144: out.print("<p>");
+145: 
+146: for(int i=0;i<eigenvectors.length;i++)
+147: for(int j=0;j<eigenvectors.get(0).length;j++)
+148: 	out.print(eigenvectors[i]+" ");
+149: %>
+150: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:33:41 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 141 in the jsp file: /test.jsp
+Cannot invoke get(int) on the array type double[][]
+138: out.print("<p>");
+139: 
+140: for(int i=0;i<eigenvectors.length;i++)
+141: for(int j=0;j<eigenvectors.get(0).length;j++)
+142: 	out.print(eigenvectors[i]+" ");
+143: %>
+144: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:34:08 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 141 in the jsp file: /test.jsp
+Cannot invoke get(int) on the array type double[][]
+138: out.print("<p>");
+139: 
+140: for(int i=0;i<eigenvectors.length;i++)
+141: for(int j=0;j<eigenvectors.get(0).length;j++)
+142: 	out.print(eigenvectors[i][j]+" ");
+143: %>
+144: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:34:09 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: org.apache.jsp.test_jsp
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:134)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:66)
+	at org.apache.jasper.JspCompilationContext.load(JspCompilationContext.java:628)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:149)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:340)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:34:09 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: org.apache.jsp.test_jsp
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:134)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:66)
+	at org.apache.jasper.JspCompilationContext.load(JspCompilationContext.java:628)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:149)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:340)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:34:10 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: org.apache.jsp.test_jsp
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:134)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:66)
+	at org.apache.jasper.JspCompilationContext.load(JspCompilationContext.java:628)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:149)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:340)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:34:10 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: org.apache.jsp.test_jsp
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:134)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:66)
+	at org.apache.jasper.JspCompilationContext.load(JspCompilationContext.java:628)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:149)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:340)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:34:11 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ClassNotFoundException: org.apache.jsp.test_jsp
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:134)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:66)
+	at org.apache.jasper.JspCompilationContext.load(JspCompilationContext.java:628)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:149)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:340)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:34:14 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 141 in the jsp file: /test.jsp
+Cannot invoke get(int) on the array type double[][]
+138: out.print("<p>");
+139: 
+140: for(int i=0;i<eigenvectors.length;i++)
+141: for(int j=0;j<eigenvectors.get(0).length;j++)
+142: 	out.print(eigenvectors[i][j]+" ");
+143: %>
+144: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 13:50:13 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 124 in the jsp file: /test.jsp
+fileDir cannot be resolved to a variable
+121: PCA pca = new PCA();
+122: //pca.enterScoresAsRowPerPerson(responses);
+123: pca.enterTitle("pca analysis");
+124: pca.readScoresAsRowPerPersonA(fileDir+"/tmp/test.txt");
+125: pca.setDenominatorToNminusOne();//方差的分母为n-1
+126: pca.useCovarianceMatrix();//使用协方差矩阵求解
+127: pca.setParallelAnalysisPercentileValue(gama);//主成分所占的能量占总能量比例
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 14:49:24 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 210 in the jsp file: /abnormalDiagnosis.jsp
+rowNume cannot be resolved to a variable
+207: 			C[i][j]=-C[i][j];
+208: 	}
+209: 
+210: double[] projection=new double[rowNume];
+211: for(int i=0;i<rowNum;i++)
+212: 	projection[i]=0;
+213: for(int i=0;i<rowNum;i++)
+
+
+An error occurred at line: 224 in the jsp file: /abnormalDiagnosis.jsp
+The method PersonNames() is undefined for the type PCA
+221: 
+222: 
+223: //diagnosis
+224: taskIDs=pca.PersonNames();
+225: out.print("start diagnosing...<p>");
+226: for(int i=0;i<rowNum;i++){
+227: 	out.print(projection[i]+"<p>");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 14:49:50 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 224 in the jsp file: /abnormalDiagnosis.jsp
+The method PersonNames() is undefined for the type PCA
+221: 
+222: 
+223: //diagnosis
+224: taskIDs=pca.PersonNames();
+225: out.print("start diagnosing...<p>");
+226: for(int i=0;i<rowNum;i++){
+227: 	out.print(projection[i]+"<p>");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 14:53:54 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.IllegalArgumentException: You have entered only one score or measurement source - PCA is not meaningful
+	at flanagan.analysis.PCA.pca(PCA.java:205)
+	at org.apache.jsp.abnormalDiagnosis_jsp._jspService(abnormalDiagnosis_jsp.java:203)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 14:58:20 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at org.apache.jsp.abnormalDiagnosis_jsp._jspService(abnormalDiagnosis_jsp.java:175)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-1 15:14:57 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.IllegalArgumentException: You have entered only one score or measurement source - PCA is not meaningful
+	at flanagan.analysis.PCA.pca(PCA.java:205)
+	at org.apache.jsp.abnormalDiagnosis_jsp._jspService(abnormalDiagnosis_jsp.java:203)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)

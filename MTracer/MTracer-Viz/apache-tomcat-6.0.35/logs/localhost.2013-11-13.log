@@ -1,0 +1,319 @@
+Nov 13, 2013 7:58:48 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+Syntax error on token "<", { expected
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+input cannot be resolved to a type
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+Syntax error, insert ";" to complete BlockStatements
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+style cannot be resolved to a variable
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+Syntax error, insert ";" to complete Statement
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+type cannot be resolved to a variable
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+Syntax error, insert ";" to complete Statement
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+value cannot be resolved to a variable
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+Syntax error, insert ";" to complete Statement
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+String literal is not properly closed by a double-quote
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			<input title = "use this one as current database" style="width:80" type="button" value="enable" onClick = "onChangeDB('<%=files[i]%>'); return false;"/>
+80: 		
+81: 		//else
+82: 		%>
+
+
+An error occurred at line: 91 in the jsp file: /database_list.jsp
+Syntax error, insert "else Statement" to complete IfStatement
+88: 		out.println("</tr>");
+89: 	}
+90: }
+91: %>
+92: </table>
+93: </BODY>
+
+
+An error occurred at line: 91 in the jsp file: /database_list.jsp
+Syntax error, insert "}" to complete Block
+88: 		out.println("</tr>");
+89: 	}
+90: }
+91: %>
+92: </table>
+93: </BODY>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:722)
+
+Nov 13, 2013 8:04:50 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+Syntax error, insert ")" to complete MethodInvocation
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			out.println("<input title = \"use this one as current database\" style=\"width:80\" type=\"button\" value=\"enable\" onClick = \"onChangeDB('<"+"%=files[i]%"+">'); return false;\"/>"
+80: 
+81: 		
+82: 		//else
+
+
+An error occurred at line: 79 in the jsp file: /database_list.jsp
+Syntax error, insert ";" to complete Statement
+76: 		<td>
+77: 		<%
+78: 		if(files[i].endsWith(".sql"))
+79: 			out.println("<input title = \"use this one as current database\" style=\"width:80\" type=\"button\" value=\"enable\" onClick = \"onChangeDB('<"+"%=files[i]%"+">'); return false;\"/>"
+80: 
+81: 		
+82: 		//else
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:722)
+
+Nov 13, 2013 9:13:28 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 99 in the jsp file: /database_manager.jsp
+FileReader cannot be resolved to a type
+96: else if(OpType.equals("open"))
+97: {
+98: 	String dbname=request.getParameter("dbname");
+99: 	FileReader fr=new FileReader(dir+"/database/"+dbname);
+100: 	BufferedReader br=new BufferedReader(fr);
+101: 	String content=br.readLine();
+102: 	br.close();
+
+
+An error occurred at line: 99 in the jsp file: /database_manager.jsp
+FileReader cannot be resolved to a type
+96: else if(OpType.equals("open"))
+97: {
+98: 	String dbname=request.getParameter("dbname");
+99: 	FileReader fr=new FileReader(dir+"/database/"+dbname);
+100: 	BufferedReader br=new BufferedReader(fr);
+101: 	String content=br.readLine();
+102: 	br.close();
+
+
+An error occurred at line: 100 in the jsp file: /database_manager.jsp
+BufferedReader cannot be resolved to a type
+97: {
+98: 	String dbname=request.getParameter("dbname");
+99: 	FileReader fr=new FileReader(dir+"/database/"+dbname);
+100: 	BufferedReader br=new BufferedReader(fr);
+101: 	String content=br.readLine();
+102: 	br.close();
+103: 	fr.close();
+
+
+An error occurred at line: 100 in the jsp file: /database_manager.jsp
+BufferedReader cannot be resolved to a type
+97: {
+98: 	String dbname=request.getParameter("dbname");
+99: 	FileReader fr=new FileReader(dir+"/database/"+dbname);
+100: 	BufferedReader br=new BufferedReader(fr);
+101: 	String content=br.readLine();
+102: 	br.close();
+103: 	fr.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:722)
+
+Nov 13, 2013 9:19:39 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: /database_manager.jsp(2,1) Page directive: illegal to have multiple occurrences of contentType with different values (old: text/html;charset=UTF-8, new: text/plain;charset=UTF-8)
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:40)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:407)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:236)
+	at org.apache.jasper.compiler.Validator$DirectiveVisitor.visit(Validator.java:132)
+	at org.apache.jasper.compiler.Node$PageDirective.accept(Node.java:608)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2361)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2411)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2417)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:495)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2361)
+	at org.apache.jasper.compiler.Validator.validateDirectives(Validator.java:1723)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:182)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:722)
+

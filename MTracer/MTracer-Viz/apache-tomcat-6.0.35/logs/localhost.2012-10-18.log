@@ -1,0 +1,647 @@
+2012-10-18 8:29:16 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-10-18 8:29:16 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-10-18 8:45:24 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 30 in the jsp file: /abnormalDiagnosis.jsp
+The method getTaskID() is undefined for the type TaskRecord
+27: 			TaskRecord task = it.next();
+28: 			String taskID = task.getTaskId();
+29: 			
+30: 			out.println(task.getTaskID());
+31: 		}
+32: 		tasks=accessor.getTasksBySearch(condition, title, off, len);
+33: 	}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 8:46:50 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 18 in the jsp file: /abnormalDiagnosis.jsp
+count cannot be resolved to a variable
+15: 	if(!key.equals("sortValue")&&!key.equals("sortStyle"))
+16: 		condition.put(key, value);
+17: }
+18: count = 0;
+19: if(paraNum != 0){
+20: 	String temp=application.getRealPath(request.getRequestURI());  
+21: 	String fileDir=new File(temp).getParent();
+
+
+An error occurred at line: 31 in the jsp file: /abnormalDiagnosis.jsp
+count cannot be resolved to a variable
+28: 			TaskRecord task = it.next();
+29: 			String taskID = task.getTaskId();
+30: 			
+31: 			out.println(count+"::"+task.getTaskId());
+32: 			count++;
+33: 		}
+34: 		tasks=accessor.getTasksBySearch(condition, title, off, len);
+
+
+An error occurred at line: 32 in the jsp file: /abnormalDiagnosis.jsp
+count cannot be resolved to a variable
+29: 			String taskID = task.getTaskId();
+30: 			
+31: 			out.println(count+"::"+task.getTaskId());
+32: 			count++;
+33: 		}
+34: 		tasks=accessor.getTasksBySearch(condition, title, off, len);
+35: 	}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 8:47:33 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 18 in the jsp file: /abnormalDiagnosis.jsp
+count cannot be resolved to a variable
+15: 	if(!key.equals("sortValue")&&!key.equals("sortStyle"))
+16: 		condition.put(key, value);
+17: }
+18: count = 0;
+19: if(paraNum != 0){
+20: 	String temp=application.getRealPath(request.getRequestURI());  
+21: 	String fileDir=new File(temp).getParent();
+
+
+An error occurred at line: 31 in the jsp file: /abnormalDiagnosis.jsp
+count cannot be resolved to a variable
+28: 			TaskRecord task = it.next();
+29: 			String taskID = task.getTaskId();
+30: 			
+31: 			out.println(count+"::"+task.getTaskId());
+32: 			count++;
+33: 		}
+34: 		tasks=accessor.getTasksBySearch(condition, title, off, len);
+
+
+An error occurred at line: 32 in the jsp file: /abnormalDiagnosis.jsp
+count cannot be resolved to a variable
+29: 			String taskID = task.getTaskId();
+30: 			
+31: 			out.println(count+"::"+task.getTaskId());
+32: 			count++;
+33: 		}
+34: 		tasks=accessor.getTasksBySearch(condition, title, off, len);
+35: 	}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 8:52:22 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-10-18 8:52:22 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-10-18 8:52:23 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-10-18 8:52:23 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()
+2012-10-18 8:52:56 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-10-18 8:52:56 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-10-18 8:52:58 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-10-18 8:52:58 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()
+2012-10-18 8:52:59 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-10-18 8:52:59 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-10-18 8:53:01 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-10-18 8:53:01 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()
+2012-10-18 8:53:02 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-10-18 8:53:02 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-10-18 8:53:51 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-10-18 8:53:51 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()
+2012-10-18 8:53:52 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:1709)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:1685)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1396)
+	at edu.nudt.xtrace.MySQLAccessor.numTasks(MySQLAccessor.java:768)
+	at org.apache.jsp.index_jsp._jspService(index_jsp.java:432)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 8:53:52 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:1709)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:1685)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1396)
+	at edu.nudt.xtrace.MySQLAccessor.numTasks(MySQLAccessor.java:768)
+	at org.apache.jsp.index_jsp._jspService(index_jsp.java:432)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 8:53:52 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:1709)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:1685)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1396)
+	at edu.nudt.xtrace.MySQLAccessor.numTasks(MySQLAccessor.java:768)
+	at org.apache.jsp.index_jsp._jspService(index_jsp.java:432)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 8:53:52 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+java.lang.NullPointerException
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:1709)
+	at com.mysql.jdbc.PreparedStatement.fillSendPacket(PreparedStatement.java:1685)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1396)
+	at edu.nudt.xtrace.MySQLAccessor.numTasks(MySQLAccessor.java:768)
+	at org.apache.jsp.index_jsp._jspService(index_jsp.java:432)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:388)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 8:54:04 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-10-18 8:54:04 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()
+2012-10-18 8:54:18 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-10-18 8:54:18 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-10-18 9:35:34 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 38 in the jsp file: /abnormalDiagnosis.jsp
+Exceptions cannot be resolved to a type
+35: 			{
+36: 				Report rep = reports.get(i);
+37: 				int index=-1;
+38: 				try{index = Integer.parseInt(rep.get("dfsorder").get(0));}catch(Exceptions e){break;}
+39: 				if(index<0 || index>=reports.size())break;
+40: 				delayArray[index]=rep.get("delay").get(0);
+41: 			}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 10:03:42 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 29 in the jsp file: /abnormalDiagnosis.jsp
+BufferedWriter cannot be resolved to a type
+26: 		delayListForDiagnosisFile.createNewFile();
+27: 	}if(!taskListForDiagnosisFile.exists()){  
+28: 		taskListForDiagnosisFile.createNewFile();
+29: 	} BufferedWriter
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+
+
+An error occurred at line: 31 in the jsp file: /abnormalDiagnosis.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+28: 		taskListForDiagnosisFile.createNewFile();
+29: 	} BufferedWriter
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+
+
+An error occurred at line: 31 in the jsp file: /abnormalDiagnosis.jsp
+delayFileWriter cannot be resolved to a variable
+28: 		taskListForDiagnosisFile.createNewFile();
+29: 	} BufferedWriter
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+
+
+An error occurred at line: 31 in the jsp file: /abnormalDiagnosis.jsp
+FileWriter cannot be resolved to a type
+28: 		taskListForDiagnosisFile.createNewFile();
+29: 	} BufferedWriter
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+
+
+An error occurred at line: 32 in the jsp file: /abnormalDiagnosis.jsp
+FileWriter cannot be resolved to a type
+29: 	} BufferedWriter
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+
+
+An error occurred at line: 32 in the jsp file: /abnormalDiagnosis.jsp
+FileWriter cannot be resolved to a type
+29: 	} BufferedWriter
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+
+
+An error occurred at line: 33 in the jsp file: /abnormalDiagnosis.jsp
+BufferedWriter cannot be resolved to a type
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+36: 
+
+
+An error occurred at line: 33 in the jsp file: /abnormalDiagnosis.jsp
+BufferedWriter cannot be resolved to a type
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+36: 
+
+
+An error occurred at line: 33 in the jsp file: /abnormalDiagnosis.jsp
+delayFileWriter cannot be resolved to a variable
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+36: 
+
+
+An error occurred at line: 34 in the jsp file: /abnormalDiagnosis.jsp
+BufferedWriter cannot be resolved to a type
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+36: 
+37: 	int off = 0;int len =50;
+
+
+An error occurred at line: 34 in the jsp file: /abnormalDiagnosis.jsp
+BufferedWriter cannot be resolved to a type
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+36: 
+37: 	int off = 0;int len =50;
+
+
+An error occurred at line: 68 in the jsp file: /abnormalDiagnosis.jsp
+delayFileWriter cannot be resolved
+65: 		off=off+count;
+66: 		tasks=accessor.getTasksBySearch(condition, title, off, len);
+67: 	}
+68: 	delayFileWriter.flush();
+69: 	taskFileWriter.flush();
+70: 
+71: 	//String url=request.getHeader("Referer");
+
+
+An error occurred at line: 77 in the jsp file: /abnormalDiagnosis.jsp
+delayFileWriter cannot be resolved
+74: 
+75: 	dbw.close();
+76: 	tbw.close();
+77: 	delayFileWriter.close();
+78: 	taskFileWriter.close();
+79: 	delayListForDiagnosisFile.delete();
+80: 	taskListForDiagnosisFile.delete();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 10:04:08 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 31 in the jsp file: /abnormalDiagnosis.jsp
+FileWriter cannot be resolved to a type
+28: 		taskListForDiagnosisFile.createNewFile();
+29: 	}
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+
+
+An error occurred at line: 31 in the jsp file: /abnormalDiagnosis.jsp
+FileWriter cannot be resolved to a type
+28: 		taskListForDiagnosisFile.createNewFile();
+29: 	}
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+
+
+An error occurred at line: 32 in the jsp file: /abnormalDiagnosis.jsp
+FileWriter cannot be resolved to a type
+29: 	}
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+
+
+An error occurred at line: 32 in the jsp file: /abnormalDiagnosis.jsp
+FileWriter cannot be resolved to a type
+29: 	}
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+
+
+An error occurred at line: 33 in the jsp file: /abnormalDiagnosis.jsp
+BufferedWriter cannot be resolved to a type
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+36: 
+
+
+An error occurred at line: 33 in the jsp file: /abnormalDiagnosis.jsp
+BufferedWriter cannot be resolved to a type
+30: 	//写入txt文件    
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+36: 
+
+
+An error occurred at line: 34 in the jsp file: /abnormalDiagnosis.jsp
+BufferedWriter cannot be resolved to a type
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+36: 
+37: 	int off = 0;int len =50;
+
+
+An error occurred at line: 34 in the jsp file: /abnormalDiagnosis.jsp
+BufferedWriter cannot be resolved to a type
+31: 	FileWriter delayFileWriter = new FileWriter(fileDir+"/tmp/delayListForDiagnosis",false); 
+32: 	FileWriter taskFileWriter = new FileWriter(fileDir+"/tmp/taskListForDiagnosis",false);  
+33: 	BufferedWriter dbw = new BufferedWriter(delayFileWriter); 
+34: 	BufferedWriter tbw = new BufferedWriter(taskFileWriter);
+35: 	
+36: 
+37: 	int off = 0;int len =50;
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:92)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:330)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:439)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:334)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:321)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:328)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:313)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:260)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:859)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:602)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2012-10-18 11:28:09 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-10-18 11:28:09 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()
+2012-10-18 15:02:18 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2012-10-18 15:02:18 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2012-10-18 15:22:12 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextDestroyed()
+2012-10-18 15:22:12 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextDestroyed()

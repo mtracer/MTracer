@@ -1,0 +1,592 @@
+//[1] Haibo's paper
+//[2] Anukool Lakhina, etc. Diagnosing Network-Wide Traffic Anomalies.
+//[3] 概率论与数理统计
+
+package edu.nudt.xtrace;
+
+import java.sql.Connection;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.io.File;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.HashMap;
+import java.util.Map;
+
+//the lib flanagan.jar, used for PCA analysis in the AbnormalDiagnosis.java,  
+//store in the floder " /usr/lib/jvm/java-6-sun/jre/lib/ext "
+import flanagan.math.Fmath;
+import flanagan.io.Db;
+import flanagan.analysis.PCA;
+
+public class AbnormalDiagnosis{
+
+/**
+ *this parameter used in ensure the number of pricipal component, 
+ *when (sum of first k sorted eigenvalue)/(sum of all eigenvalue)>gama, and
+ *     (sum of first k-1 sorted eigenvalue)/(sum of all eigenvalue)<=gama
+ *the related k eigenvectors will be selected as k principal components
+ *see [1] P98
+*/
+private double gamma = 0.95;
+public double getGamma(){return gamma;};
+public void setGamma(double gama){this.gamma=gamma;};
+
+/**
+ *used in calculating the threshold in find abnormal traces
+ *see the alpha in [2] P5
+*/
+private double alpha = 0.05;
+public double getAlpha(){return alpha;};
+public void setAlpha(double alpha){this.alpha=alpha;};
+private double CAlpha()
+{
+	return CAlpha(this.alpha);
+}
+private double CAlpha(double alpha){//see the Calpha in [2] P5
+	double a=1-alpha/2;
+	return DistributeTable.phi(a);
+}
+
+/**
+ *used in finding abnormal operations
+ *see the alpha in [3] P196
+*/
+private double lambda = 0.05;
+public double getLambda(){return lambda;};
+public void setLambda(double lambda){this.lambda=lambda;};
+
+/**
+ *matrix storing metadata, 
+ *a row represent the delays of a Trace, and a column a op's delays in different traces
+ *rowNum: the number of dataMatrix rows
+ *colNum: the number of dataMatrix columns;
+ *rowNames: the name of each row
+*/
+private double [][] originalData = null;//original data without 0-means
+public double[][] getOriginalData(){return originalData;}
+private double [][] dataMatrix = null;//after 0-means
+private int rowNum = 0;
+private int colNum = 0;
+public double[][] getDataMatrix(){return dataMatrix;}
+public void setDataMatrix(double[][] m){
+	if(m==null)return;
+	this.originalData=m;
+	rowNum=m.length;
+	colNum=(rowNum==0)?0:m[0].length;
+	dataMatrix = new double[rowNum][colNum];
+	for(int i=0;i<rowNum;i++)
+		for(int j=0;j<colNum;j++)
+			dataMatrix[i][j]=originalData[i][j];
+}
+public int getRowNum(){return rowNum;};
+public int getColNum(){return colNum;};
+/*private String[] rowNames = null;
+public String[] getRowNames(){return rowNames;};
+public String getRowName(int index){
+	if(index<0 || index>rowNum-1)
+		return "";
+	else
+		return rowNames[index];
+}
+public void setRowNames(String[] rowNames){this.rowNames = rowNames;};*/
+public String[] getRowNames(){return pca.personNames();};
+/**
+ *use the PCA instance in flanagan lib to do the PCA
+*/
+private PCA pca = null;
+private double[] eigenvalues = null;//the all sorted related eigenvalues
+private double[][] eigenvectors = null;//the all sorted component of dataMatrix
+private int principalComponentNum = 0;//the number of principal components
+public double[] getEigenvalues(){return eigenvalues;};
+public double[][] getEigenvectors(){return eigenvectors;};
+public int getPrincipalComponentNum(){return principalComponentNum;};
+
+/**
+ *the threshold for the SPE
+ *see [2] P5
+*/
+private double threshold = 0;
+public double getThreshold(){return threshold;};
+
+/**
+ *the projection of each row of dataMatrix, to the abnormal space,
+ *if the projection of a row bigger than the threshold, this row is treated as a abnormal data,
+ *else a normal one
+*/
+private double[] projection = null;
+public double[] getProjection(){return projection;};
+
+/**
+ *the result of analysis
+ *abnormalRows means abnormal traces, and
+ *abnormalCols means abnormal operations.
+*/
+private String[] abnormalRows = null;
+private int[] abnormalCols = null;
+public String[] getAbnormalRows(){return abnormalRows;};
+public int[] getAbnormalCols(){return abnormalCols;};
+
+/**
+ *principalCols stores the principal column index selected before finding the abnormal operation
+ *to reduce the calculating complex. see [1] P103
+*/
+int[] principalCols = null;
+public int[] getPrincipalCols(){return principalCols;};
+
+//functions
+public AbnormalDiagnosis(){};
+
+private void reset(){
+	originalData = null;
+	dataMatrix = null;
+	rowNum = 0;colNum = 0;
+	pca = null;
+	eigenvalues = null;
+	eigenvectors = null;
+	principalComponentNum = 0;
+	threshold = 0;
+	projection = null;
+	abnormalRows = null;
+}
+
+/**
+ *preprocess of dataMatrix
+ *mean-zero the column of delay matrix, 
+ *which means for any xij, let xij=xij-xj, xj is the mean of the j-th column
+*/
+private void preprocess(){
+	for(int j=0;j<colNum;j++){
+		double colMean=0;
+		for(int i=0;i<rowNum;i++)
+			colMean = colMean+dataMatrix[i][j];
+		colMean=colMean/rowNum;
+		
+		/*
+		double colVar=0;
+		for(int i=0;i<rowNum;i++)
+			colVar = colVar+(dataMatrix[i][j]-colMean)*(dataMatrix[i][j]-colMean);
+		colVar=colVar/(rowNum-1);
+		*/
+		for(int i=0;i<rowNum;i++){
+			dataMatrix[i][j]=dataMatrix[i][j]-colMean;
+			//dataMatrix[i][j]=dataMatrix[i][j]/colVar;
+		}
+	}
+}
+
+//PCA settings
+private void PCASetting(String[] rowNames){
+	pca = new PCA();
+	pca.enterScoresAsRowPerPerson(dataMatrix);//set the responses to PCA
+	pca.enterPersonNames(rowNames);//set row names
+	pca.enterTitle("PCA analysis");//set the title of PCA
+	pca.setDenominatorToNminusOne();//set the denominator of variances to be n-1, not n
+	pca.useCovarianceMatrix();//set the Covariance matrix as the matrix, not Correlation Matrix
+	//pca.useCorrelationMatrix();
+	pca.setParallelAnalysisPercentileValue(this.gamma);//
+}
+
+/**
+ *calculate the number of principal components
+ *see the comments of gamma
+*/
+private void calPrincipalComponentNum(){
+	double eigenvaluesSum=0;
+	for(int i=0;i<eigenvalues.length;i++)
+		eigenvaluesSum+=eigenvalues[i];
+
+	double partEigenvaulesSum=0;
+	for(int i=0;i<eigenvalues.length;i++){
+		partEigenvaulesSum+=eigenvalues[i];
+		if(partEigenvaulesSum/eigenvaluesSum>=gamma){
+			principalComponentNum = i+1;
+			return;
+		}
+	}
+	principalComponentNum = eigenvalues.length;
+}
+
+//see the comments of threshold
+private void calThreshold(){
+	double[] variances=new double[colNum-principalComponentNum];
+	for(int i=0;i<variances.length;i++)
+		variances[i]=0;
+	for(int i=0;i<variances.length;i++)
+	{
+		for(int j=0;j<rowNum;j++){
+			double tmp=0;
+			for(int k=0;k<colNum;k++)
+				tmp+=dataMatrix[j][k]*eigenvectors[principalComponentNum+i][k];
+			variances[i]+=tmp*tmp;
+		}
+	}
+	/*added */
+/*	double[] variances=new double[colNum-principalComponentNum+1];//正确的应该是principalComponentNum,而不是principalComponentNum+1
+	for(int i=0;i<variances.length;i++)
+		variances[i]=eigenvalues[principalComponentNum-1+i];//正确的应该是principalComponentNum,而不是principalComponentNum-1
+*/	/*added */
+	double phi1=0,phi2=0,phi3=0;
+	for(int i=0;i<variances.length;i++)
+	{
+		phi1+=variances[i];
+		phi2+=variances[i]*variances[i];
+		phi3+=variances[i]*variances[i]*variances[i];
+	}
+	double h0=1-(2*phi1*phi3)/(3*phi2*phi2);
+	double Q1=0,Q2=0,Q3=0;
+	double Ca=CAlpha();
+	Q1=Ca*Math.sqrt(2*phi2*h0*h0)/phi1;
+	Q2=(phi2*h0*(h0-1))/(phi1*phi1);
+	Q3=Math.pow((Q1+Q2+1),1/h0);
+	threshold=phi1*Q3;
+}
+
+/**
+ *calculate the projection of dataMatrix rows on abnormal space,
+ *projection(y) = (I − PP^T)*y, where the P is normal space, i.e. principal components
+ *see [2] P5
+*/
+private void calProjection(){
+	/*added */
+	boolean isOk = true;
+	for(int i=0;i<principalComponentNum;i++){
+		if(eigenvalues[i]<=0)
+			isOk = false;
+	}
+	if(isOk==true){
+		for(int i=0;i<principalComponentNum;i++)
+			for(int j=0;j<eigenvalues.length;j++)
+				eigenvectors[i][j]=eigenvectors[i][j]/Math.sqrt(eigenvalues[i]);
+	}
+	/*added */
+	double[][] C=new double[colNum][colNum];
+	for(int i=0;i<colNum;i++)
+		for(int j=0;j<colNum;j++)
+			C[i][j]=0;
+	for(int i=0;i<colNum;i++)//calculate the (I-PP^T)
+		for(int j=0;j<colNum;j++){
+			for(int k=0;k<principalComponentNum;k++)
+				C[i][j]+=eigenvectors[k][i]*eigenvectors[k][j];
+			if(i==j)
+				C[i][j]=1-C[i][j];
+			else
+				C[i][j]=-C[i][j];
+		}
+
+	projection=new double[rowNum];
+	for(int i=0;i<rowNum;i++)
+		projection[i]=0;
+	for(int i=0;i<rowNum;i++)
+		for(int j=0;j<colNum;j++){
+			double tmp=0;
+			for(int k=0;k<colNum;k++)
+				tmp+=C[j][k]*dataMatrix[i][k];
+			projection[i]+=tmp*tmp;
+		}
+	/*added */
+	if(isOk==true){
+		for(int i=0;i<principalComponentNum;i++)
+			for(int j=0;j<eigenvalues.length;j++)
+				eigenvectors[i][j]=eigenvectors[i][j]*Math.sqrt(eigenvalues[i]);
+	}
+	/*added */
+}
+
+//see the comments of projection
+private void calAbnormalRows(){
+	String [] rowNames = pca.personNames();
+	ArrayList<String> tmp = new ArrayList<String>();
+	for(int i=0;i<rowNum;i++){
+		if(projection[i]>threshold)
+			tmp.add(rowNames[i]);
+	}
+	abnormalRows = new String[tmp.size()];
+	for(int i=0;i<tmp.size();i++)
+		abnormalRows[i] = tmp.get(i);
+}
+
+/**
+ *calculate the abnormal rows in matrix
+ *i.e. find the abnormal traces
+ *use PCA analysis, see [2]
+ *matrix is the metadata matrix whose row is a vector and col is a dimension
+ *i.e. a row represents a trace's delay list, and all trace delays form this matrix
+ *rowNames is the name of each row, i.e. taskIDs
+*/
+public String[] calAbnormalRows(double[][] matrix, String[] rowNames){
+	reset();
+	setDataMatrix(matrix);
+	preprocess();
+	PCASetting(rowNames);
+	pca.pca();
+	//pca.monteCarlo();
+	eigenvalues = pca.orderedEigenValues();
+	eigenvectors = pca.orderedEigenVectorsAsRows();
+	calPrincipalComponentNum();
+	calThreshold();
+	calProjection();
+	calAbnormalRows();
+	return abnormalRows;
+}
+
+/**
+ *find the principal operations using B4 algorithm
+ *see [1] P103
+*/
+private void calPrincipalCols(int depth){
+	if(depth<=0 || depth>colNum)
+		depth = colNum;
+	
+	ArrayList<Integer> pcs = new ArrayList<Integer>();
+	for(int i=0;i<principalComponentNum;i++){//for each principal component
+		for(int j=0;j<depth;j++){	 //find depth index related to the depth-th biggest elements
+			double max = -1;
+			int maxIndex = -1;
+			for(int k=0;k<colNum;k++){//find the biggest
+				if(Math.abs(eigenvectors[i][k])>max && !pcs.contains(k)){
+					max = Math.abs(eigenvectors[i][k]);
+					maxIndex = k;
+				}
+			}
+			if(maxIndex>=0)
+				pcs.add(maxIndex);
+		}
+	}
+	principalCols = new int[pcs.size()];
+	for(int i=0;i<pcs.size();i++)
+		principalCols[i]=pcs.get(i);
+}
+
+/**
+ * find the abnormal operations in the abnormal traces
+ * return <id, ops> where ops is the abnormal OPs in the trace with taskID=id
+**/
+public ArrayList<DiagnosisResult> calAbnormalOperation(){
+	return calAbnormalOperation(colNum);
+}
+public ArrayList<DiagnosisResult> calAbnormalOperation(int depth){
+	if(eigenvectors == null || principalComponentNum == 0)//haven't executed the calAbnormalRows()
+		return null;
+	if(abnormalRows.length == 0)//there is no abnormal traces
+		return null;
+	//initial the result
+	ArrayList<DiagnosisResult> result = new ArrayList<DiagnosisResult>();
+	for(int i=0;i<abnormalRows.length;i++){
+		String id = abnormalRows[i];
+		DiagnosisResult dr = new DiagnosisResult(id);
+		result.add(dr);
+	}
+
+	String [] rowNames = pca.personNames();
+	ArrayList<String> abnormalRowsList = new ArrayList<String>();//form a list of abnormal row name from abnormalRows
+	for(int i=0;i<abnormalRows.length;i++)
+		abnormalRowsList.add(abnormalRows[i]);
+	calPrincipalCols(depth);
+	for(int i=0;i<principalCols.length;i++){//for each principal coloum
+		int colIndex = principalCols[i];
+		ArrayList<Double> normalItem = new ArrayList<Double>();
+		for(int j=0;j<rowNum;j++){//find the normal datas of this row
+			if(!abnormalRowsList.contains(rowNames[j]))//normal row data
+				normalItem.add(originalData[j][colIndex]);
+		}
+
+		/*cal the range of normal items*/
+		double tmp=0,mean=0,variance=0;
+		for(int j=0;j<normalItem.size();j++){
+			tmp+=normalItem.get(j);
+		}
+		mean = tmp/normalItem.size();//mean of N
+		tmp=0;
+		for(int j=0;j<normalItem.size();j++){
+			tmp+=(normalItem.get(j)-mean)*(normalItem.get(j)-mean);
+		}
+		variance=Math.sqrt(tmp/(normalItem.size()-1));//variance of N
+		tmp = variance*DistributeTable.t(lambda/2,normalItem.size()-1)/Math.sqrt(normalItem.size());
+		double miuMin=mean-tmp;//see [3] P196(5.4)
+		double miuMax=mean+tmp;
+		tmp = Math.sqrt(normalItem.size()-1)*variance;
+		double deltaMin=tmp/Math.sqrt(DistributeTable.X2(lambda/2,normalItem.size()-1));//see [3] P197 (5.8)
+		double deltaMax=tmp/Math.sqrt(DistributeTable.X2(1-lambda/2,normalItem.size()-1));
+		double minValue=miuMin-3*deltaMax;
+		double maxValue=miuMax+3*deltaMax;
+		for(int j=0;j<rowNum;j++){//check each trace of this op
+			if(abnormalRowsList.contains(rowNames[j])){//abnormal row data
+				if(originalData[j][colIndex]>maxValue || originalData[j][colIndex]<minValue){//abnormal op
+					String id = rowNames[j];
+					DiagnosisResult dr=null;
+					for(int k=0;k<result.size();k++){
+						dr=result.get(k);
+						if(dr.getTaskID().equals(id))
+							break;
+					}
+					if(dr!=null)
+						dr.addAbnormal(colIndex, originalData[j][colIndex], minValue, maxValue);
+					else{
+						dr=new DiagnosisResult(id);
+						dr.addAbnormal(colIndex, originalData[j][colIndex], minValue, maxValue);
+						result.add(dr);
+					}
+				}
+			}
+		}
+	}
+	//only the abnormal trace with abnormal operations a real abnormal
+	//remove the abnormal traces with out abnormal operations
+	for(int i=0;i<result.size();i++){
+		DiagnosisResult dr = result.get(i);
+		if(dr.getAbnormalOperationNum()==0){
+			result.remove(i);
+			i--;
+		}
+	}
+	return result;
+}
+
+public ArrayList<DiagnosisResult> diagnosis(double[][] matrix, String[] rowNames){
+	calAbnormalRows(matrix, rowNames);
+	return calAbnormalOperation();
+}
+
+public ArrayList<DiagnosisResult> diagnosis(double[][] matrix, String[] rowNames, int depth){
+	calAbnormalRows(matrix, rowNames);
+	return calAbnormalOperation(depth);
+}
+/**
+ *calculate the rank sum, N1 and N2 are the samples
+ *and return the rank sum of N1
+ *see [3] P253
+*//*
+private float calRankSum(double[] N1, double[] N2)
+{
+	int NNum = N1.length+N2.length;
+	double[] N = new double[NNum];
+	boolean[] isBelongN1 = new boolean[NNum];
+	for(int i=0;i<N1.length;i++){
+		N[i]=N1[i];isBelongN1[i]=true;
+	}
+	for(int i=0;i<N2.length;i++){
+		N[N1.length+i]=N2[i];isBelongN1[N1.length+i]=false;
+	}
+	//sort
+	for(int i=0;i<NNum;i++){
+		for(int j=i;j<NNum;j++){
+			if(N[i]>N[j]){
+				double tmpD=N[i];N[i]=N[j];N[j]=tmpD;
+				boolean tmpB=isBelongN1[i];isBelongN1[i]=isBelongN1[j];isBelongN1[j]=tmpB;
+			}
+		}
+	}
+	//ranksum
+	float rankSumN1 = 0;
+	for(int i=0;i<NNum;){
+		int j;
+		for(j=i+1;j<NNum;j++){//find the same data
+			if(N[j]!=N[i])
+				break;
+		}
+		float rank = ((j-1)+i)/2+1;//"+1" means the rank start from 1, not 0
+		for(int k=i;k<j;k++){
+			if(isBelongN1[k] == true)
+				rankSumN1 += rank;
+		}
+		i=j;
+	}
+	return rankSumN1;
+}
+*/
+/**
+ *Mann-Whitney test to check if there is difference between N1 and N2
+ *N1 and N2 a two samples for testing
+ *see [1] P104
+*//*
+private boolean MannWhitneyTest(double[] N1, double[] N2)
+{
+	float R1 = calRankSum(N1, N2);
+	float R2 = (N1.length+N2.length)*(N1.length+N2.length+1)/2-R1;
+	float U1 = R1-N1.length*(N1.length+1)/2;
+	float U2 = R2-N2.length*(N2.length+1)/2;
+	return true;
+}
+*/
+
+/**
+ *calculate the abnormal column in the abnormal rows
+ *i.e. find the abnormal operations in abnoraml traces
+ *see [1] P103
+ *depth is the depth of the call tree, used to ensure the number of principal operations, begins from 1
+ *default value is colNum, that will consider all operations
+ *this function must be execute after the calAbnormalRows
+*//*
+public int[] calAbnormalCols(int depth){
+	if(eigenvectors == null || principalComponentNum == 0)//haven't executed the calAbnormalRows()
+		return null;
+	if(abnormalRows.length == 0)//there is no abnormal traces
+		return null;
+	if(principalComponentNum == 0)//not happen
+		return null;
+
+	calPrincipalCols(depth);
+
+	//prepare data structure
+	ArrayList<String> tmpAbnormalRows = new ArrayList<String>();
+	ArrayList<Integer> tmpAbnormalCols = new ArrayList<Integer>();
+	String [] rowNames = pca.personNames();
+	for(int i=0;i<abnormalRows.length;i++)
+		tmpAbnormalRows.add(abnormalRows[i]);
+	for(int i=0;i<principalCols.length;i++){//for each principal operation
+		int colIndex = principalCols[i];
+		//construct N1 and N2
+		ArrayList<Double> tmpN1 = new ArrayList<Double>();
+		ArrayList<Double> tmpN2 = new ArrayList<Double>();
+		for(int j=0;j<rowNum;j++){
+			if(tmpAbnormalRows.contains(rowNames[j]))//abnormal row data
+				tmpN2.add(dataMatrix[j][colIndex]);
+			else//normal row data
+				tmpN1.add(dataMatrix[j][colIndex]);
+		}
+		double[] N1 = new double[tmpN1.size()];
+		for(int j=0;j<N1.length;j++)
+			N1[j]=tmpN1.get(j);
+		double[] N2 = new double[tmpN2.size()];
+		for(int j=0;j<N2.length;j++)
+			N2[j]=tmpN2.get(j);
+		//MannWhitney Testing
+		if(MannWhitneyTest(N1,N2))//is abnormal operation
+			tmpAbnormalCols.add(colIndex);
+	}
+	//prepare results
+	abnormalCols= new int[tmpAbnormalCols.size()];
+	for(int i=0;i<abnormalCols.length;i++)
+		abnormalCols[i]=tmpAbnormalCols.get(i);
+	return abnormalCols;
+}
+public int[] calAbnormalCols(){
+	return calAbnormalCols(colNum);
+}
+*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

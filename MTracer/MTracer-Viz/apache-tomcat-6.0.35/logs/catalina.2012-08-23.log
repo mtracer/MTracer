@@ -1,0 +1,940 @@
+2012-8-23 8:11:01 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64/server:/usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64:/usr/lib/jvm/java-1.6.0_27-sun/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2012-8-23 8:11:01 org.apache.tomcat.util.digester.SetPropertiesRule begin
+警告: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '5' did not find a matching property.
+2012-8-23 8:11:01 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+2012-8-23 8:11:01 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 887 ms
+2012-8-23 8:11:01 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+2012-8-23 8:11:01 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.35
+2012-8-23 8:11:02 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+2012-8-23 8:11:02 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+2012-8-23 8:11:02 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+2012-8-23 8:11:02 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+2012-8-23 8:11:02 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+2012-8-23 8:11:02 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+2012-8-23 8:11:02 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/25  config=null
+2012-8-23 8:11:02 org.apache.catalina.startup.Catalina start
+信息: Server startup in 938 ms
+2012-8-23 9:07:03 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:07:03 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:07:03 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:07:33 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:07:33 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:07:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:08:45 org.apache.coyote.http11.Http11Protocol pause
+信息: Pausing Coyote HTTP/1.1 on http-8080
+2012-8-23 9:08:46 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64/server:/usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64:/usr/lib/jvm/java-1.6.0_27-sun/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2012-8-23 9:08:46 org.apache.catalina.core.StandardService stop
+信息: Stopping service Catalina
+2012-8-23 9:08:46 org.apache.tomcat.util.digester.SetPropertiesRule begin
+警告: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '5' did not find a matching property.
+2012-8-23 9:08:46 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:08:46 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:08:46 org.apache.coyote.http11.Http11Protocol destroy
+信息: Stopping Coyote HTTP/1.1 on http-8080
+2012-8-23 9:08:46 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+2012-8-23 9:08:46 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 629 ms
+2012-8-23 9:08:46 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+2012-8-23 9:08:46 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.35
+2012-8-23 9:08:47 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+2012-8-23 9:08:47 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+2012-8-23 9:08:47 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+2012-8-23 9:08:47 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+2012-8-23 9:08:47 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+2012-8-23 9:08:47 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+2012-8-23 9:08:47 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/20  config=null
+2012-8-23 9:08:47 org.apache.catalina.startup.Catalina start
+信息: Server startup in 645 ms
+2012-8-23 9:10:17 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:10:17 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:10:17 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:10:47 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:10:47 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:10:47 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:11:11 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 9:15:27 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:15:27 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:15:27 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:30:47 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:30:47 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:30:47 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:32:58 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:32:58 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:32:58 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:33:38 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:33:38 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:33:38 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:34:58 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:34:58 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:34:58 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:41:18 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:41:18 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:41:18 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:42:18 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:42:18 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:42:18 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:47:48 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:47:48 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:47:48 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:53:38 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 9:53:38 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 9:53:38 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 9:53:41 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 9:53:41 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 9:53:41 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 9:53:41 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:2759)
+	at com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:1410)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4947)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 10:00:58 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:00:58 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:00:58 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:02:24 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 10:03:38 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:03:38 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:03:38 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:04:18 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:04:18 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:04:18 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:29:49 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:29:49 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:29:49 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:30:59 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:30:59 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:30:59 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:32:09 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:32:09 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:32:09 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:32:39 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:32:39 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:32:39 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:34:09 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:34:09 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:34:09 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:34:17 org.apache.coyote.http11.Http11Protocol pause
+信息: Pausing Coyote HTTP/1.1 on http-8080
+2012-8-23 10:34:18 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64/server:/usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64:/usr/lib/jvm/java-1.6.0_27-sun/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2012-8-23 10:34:18 org.apache.catalina.core.StandardService stop
+信息: Stopping service Catalina
+2012-8-23 10:34:18 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:34:18 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:34:18 org.apache.tomcat.util.digester.SetPropertiesRule begin
+警告: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '5' did not find a matching property.
+2012-8-23 10:34:18 org.apache.coyote.http11.Http11Protocol destroy
+信息: Stopping Coyote HTTP/1.1 on http-8080
+2012-8-23 10:34:18 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+2012-8-23 10:34:18 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 631 ms
+2012-8-23 10:34:18 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+2012-8-23 10:34:18 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.35
+2012-8-23 10:34:18 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+2012-8-23 10:34:18 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+2012-8-23 10:34:18 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+2012-8-23 10:34:18 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+2012-8-23 10:34:18 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+2012-8-23 10:34:19 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+2012-8-23 10:34:19 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/20  config=null
+2012-8-23 10:34:19 org.apache.catalina.startup.Catalina start
+信息: Server startup in 657 ms
+2012-8-23 10:34:38 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:34:39 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:34:39 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:34:39 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:2759)
+	at com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:1410)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4947)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 10:35:19 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:35:21 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:35:21 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+2012-8-23 10:35:21 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:35:21 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+2012-8-23 10:35:21 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+2012-8-23 10:35:21 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+2012-8-23 10:35:21 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+2012-8-23 10:35:21 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+2012-8-23 10:35:21 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation.
+2012-8-23 10:36:21 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:36:21 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:36:21 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:37:41 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:37:41 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:37:41 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:41:01 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:41:01 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:41:01 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:42:41 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:42:41 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:42:41 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:44:11 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:44:11 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:44:11 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:44:51 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:44:51 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:44:51 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:53:32 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:53:32 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:53:32 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:55:02 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:55:02 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:55:02 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 10:57:12 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 10:57:12 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 10:57:12 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:04:42 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:04:42 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:04:42 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:05:32 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:05:32 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:05:32 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:07:23 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:07:23 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:07:23 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:08:33 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:08:33 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:08:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:08:58 org.apache.coyote.http11.Http11Protocol pause
+信息: Pausing Coyote HTTP/1.1 on http-8080
+2012-8-23 11:08:59 org.apache.catalina.core.StandardService stop
+信息: Stopping service Catalina
+2012-8-23 11:08:59 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:08:59 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:08:59 org.apache.coyote.http11.Http11Protocol destroy
+信息: Stopping Coyote HTTP/1.1 on http-8080
+2012-8-23 11:09:00 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64/server:/usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64:/usr/lib/jvm/java-1.6.0_27-sun/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2012-8-23 11:09:01 org.apache.tomcat.util.digester.SetPropertiesRule begin
+警告: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '5' did not find a matching property.
+2012-8-23 11:09:01 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+2012-8-23 11:09:01 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1355 ms
+2012-8-23 11:09:01 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+2012-8-23 11:09:01 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.35
+2012-8-23 11:09:01 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+2012-8-23 11:09:01 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+2012-8-23 11:09:02 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+2012-8-23 11:09:02 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+2012-8-23 11:09:02 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+2012-8-23 11:09:02 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+2012-8-23 11:09:02 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=1/51  config=null
+2012-8-23 11:09:02 org.apache.catalina.startup.Catalina start
+信息: Server startup in 1332 ms
+2012-8-23 11:10:22 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:10:22 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:10:22 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:13:30 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 11:18:02 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:18:02 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:18:02 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:18:52 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:18:52 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:18:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:20:32 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:20:32 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:20:32 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:21:22 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:21:22 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:21:22 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:23:43 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:23:43 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:23:43 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:24:53 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:24:53 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:24:53 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:25:53 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:25:53 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:25:53 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:25:54 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 11:25:54 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 11:25:54 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 11:27:03 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:27:03 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:27:03 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:27:09 org.apache.coyote.http11.Http11Protocol pause
+信息: Pausing Coyote HTTP/1.1 on http-8080
+2012-8-23 11:27:10 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64/server:/usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64:/usr/lib/jvm/java-1.6.0_27-sun/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2012-8-23 11:27:10 org.apache.catalina.core.StandardService stop
+信息: Stopping service Catalina
+2012-8-23 11:27:10 org.apache.coyote.http11.Http11Protocol destroy
+信息: Stopping Coyote HTTP/1.1 on http-8080
+2012-8-23 11:27:10 org.apache.tomcat.util.digester.SetPropertiesRule begin
+警告: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '5' did not find a matching property.
+2012-8-23 11:27:10 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+2012-8-23 11:27:10 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 638 ms
+2012-8-23 11:27:11 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+2012-8-23 11:27:11 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.35
+2012-8-23 11:27:11 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+2012-8-23 11:27:11 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+2012-8-23 11:27:11 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+2012-8-23 11:27:11 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+2012-8-23 11:27:11 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+2012-8-23 11:27:11 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+2012-8-23 11:27:11 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/21  config=null
+2012-8-23 11:27:11 org.apache.catalina.startup.Catalina start
+信息: Server startup in 684 ms
+2012-8-23 11:27:27 org.apache.coyote.http11.Http11Protocol pause
+信息: Pausing Coyote HTTP/1.1 on http-8080
+2012-8-23 11:27:28 org.apache.catalina.core.AprLifecycleListener init
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64/server:/usr/lib/jvm/java-1.6.0_27-sun/jre/lib/amd64:/usr/lib/jvm/java-1.6.0_27-sun/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2012-8-23 11:27:28 org.apache.catalina.core.StandardService stop
+信息: Stopping service Catalina
+2012-8-23 11:27:28 org.apache.tomcat.util.digester.SetPropertiesRule begin
+警告: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '5' did not find a matching property.
+2012-8-23 11:27:28 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:27:28 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:27:28 org.apache.coyote.http11.Http11Protocol destroy
+信息: Stopping Coyote HTTP/1.1 on http-8080
+2012-8-23 11:27:28 org.apache.coyote.http11.Http11Protocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+2012-8-23 11:27:28 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 630 ms
+2012-8-23 11:27:28 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+2012-8-23 11:27:28 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.35
+2012-8-23 11:27:28 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+2012-8-23 11:27:29 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+2012-8-23 11:27:29 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+2012-8-23 11:27:29 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+2012-8-23 11:27:29 org.apache.coyote.http11.Http11Protocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+2012-8-23 11:27:29 org.apache.jk.common.ChannelSocket init
+信息: JK: ajp13 listening on /0.0.0.0:8009
+2012-8-23 11:27:29 org.apache.jk.server.JkMain start
+信息: Jk running ID=0 time=0/20  config=null
+2012-8-23 11:27:29 org.apache.catalina.startup.Catalina start
+信息: Server startup in 660 ms
+2012-8-23 11:27:59 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:27:59 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:27:59 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:29:19 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:29:19 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:29:19 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:33:49 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:33:49 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:33:49 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:47:49 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:47:49 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:47:49 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:50:59 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:50:59 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:50:59 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 11:51:39 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 11:56:10 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 11:56:10 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 11:56:10 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 12:00:20 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 12:00:20 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 12:00:20 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 12:02:10 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 12:02:10 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 12:02:10 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 12:06:20 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 12:06:20 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 12:06:20 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 12:11:20 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 12:11:20 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 12:11:20 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 12:27:28 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 12:27:28 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 12:27:28 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 12:27:28 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 12:27:28 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 13:30:51 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+2012-8-23 13:30:51 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 13:30:51 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 14:27:28 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load java.net.BindException.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at com.mysql.jdbc.CommunicationsException.<init>(CommunicationsException.java:161)
+	at com.mysql.jdbc.MysqlIO.clearInputStream(MysqlIO.java:918)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1567)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1723)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:3277)
+	at com.mysql.jdbc.Connection.unsetMaxRows(Connection.java:5867)
+	at com.mysql.jdbc.Statement.realClose(Statement.java:2070)
+	at com.mysql.jdbc.PreparedStatement.realClose(PreparedStatement.java:2204)
+	at com.mysql.jdbc.Connection.closeAllOpenStatements(Connection.java:2227)
+	at com.mysql.jdbc.Connection.realClose(Connection.java:4940)
+	at com.mysql.jdbc.Connection.cleanup(Connection.java:2063)
+	at com.mysql.jdbc.Connection.finalize(Connection.java:3403)
+	at java.lang.ref.Finalizer.invokeFinalizeMethod(Native Method)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:83)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:14)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:160)
+2012-8-23 17:05:45 org.apache.coyote.http11.Http11Protocol pause
+信息: Pausing Coyote HTTP/1.1 on http-8080
+2012-8-23 17:05:46 org.apache.catalina.core.StandardService stop
+信息: Stopping service Catalina
+2012-8-23 17:05:46 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+2012-8-23 17:05:46 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [MySQL Statement Cancellation Timer] but has failed to stop it. This is very likely to create a memory leak.
+2012-8-23 17:05:46 org.apache.coyote.http11.Http11Protocol destroy
+信息: Stopping Coyote HTTP/1.1 on http-8080
