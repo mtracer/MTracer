@@ -4,7 +4,7 @@
 
 <HTML>
 <head>
-<title>X-Trace Viewer</title>
+<title>MTracer Viewer</title>
 </head>
 <BODY>
 <FONT style="FONT-FAMILY: sans-serif">
@@ -101,7 +101,7 @@ if(taskIDType.equals("usesession")){//通过list传递taskid的值
 }
 
 if(request.getQueryString() == null){
-	out.print("<B>X-Trace Latest Tasks</B><p>");
+	out.print("<B>Latest Tasks</B><p>");
 }else{
 	if(title!=null)
 		if(title.get("title")!=null)
