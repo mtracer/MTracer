@@ -42,7 +42,7 @@ if(!partUrl.isEmpty())
 List<Report> taskWithOp=accessor.getTasksByOp(condition, title, off, len);
 
 if(!request.getParameterNames().hasMoreElements()){
-	out.print("<B>X-Trace Latest Tasks</B><p>");
+	out.print("<B>Latest Tasks</B><p>");
 }else{
 	out.print("<B>" + title.get("title")==null?"Operations":title.get("title").get(0) + "</B><p>");
 }
