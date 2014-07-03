@@ -14,7 +14,7 @@ The machines we used are 3 VMs hosted on CloudStack with the OS of CentOS 6.3 64
 	c. Install JDK on all 3 nodes, we installed with jdk-7u11-linux-x64.tar.gz and JAVA_HOME=/usr/lib/jvm/jdk1.7.0_11.
 
 1. MTracer
-	a. Install MySQL and set user "root" with a password "root"
+	a. Install MySQL and set user "root" with a password "root", and set the port to be 3306
 		yum install mysql-server
 		service mysqld start
 		mysqladmin -u root password root
@@ -43,7 +43,7 @@ The machines we used are 3 VMs hosted on CloudStack with the OS of CentOS 6.3 64
 		java -Dxtrace.udpdest=MonitorServer:7831 -cp /root/MTracer/bin/ chatapp.Server
 		where xtrace.udpdest is the address of the monitor server
 	d. Start demo client on MonitorClient_2
-		client2£ºjava -Dxtrace.udpdest=MonitorServer:7831 -DserverAddress=MonitorClient_1 -cp /root/MTracer/bin/ chatapp.Client
+		client2ï¿½ï¿½java -Dxtrace.udpdest=MonitorServer:7831 -DserverAddress=MonitorClient_1 -cp /root/MTracer/bin/ chatapp.Client
 		where serverAddress is the address of server in this chatting demo.
 	e. input some sentences on MonitorClient_2, where a sentence with word "bye" inside will terminal the demo.
 	f. Scan the collected traces and related information in local browser with a url of "http://MonitorServer:8080/"
@@ -51,4 +51,4 @@ The machines we used are 3 VMs hosted on CloudStack with the OS of CentOS 6.3 64
 * Contact "jwzhou at nudt dot edu dot cn" if any problem about MTracer.
 
 
-[1] R. Fonseca, G. Porter, R. H. Katz, S. Shenker, and I. Stoica, ¡°X-Trace: A pervasive network tracing framework,¡± in Proc. of USENIX NSDI, 2007, pp. 271¨C284.
+[1] R. Fonseca, G. Porter, R. H. Katz, S. Shenker, and I. Stoica, ï¿½ï¿½X-Trace: A pervasive network tracing framework,ï¿½ï¿½ in Proc. of USENIX NSDI, 2007, pp. 271ï¿½C284.
