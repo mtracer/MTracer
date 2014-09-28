@@ -41,6 +41,8 @@
 </div>
 <div>• <a href="#start"> Getting Start </a>
 </div>
+<div>• <a href="#Storing"> Data Storing </a>
+</div>
 
 <hr>
 <a name="Overview"></a>
@@ -57,7 +59,7 @@
 <p><a href='http://sose2014.com/'>IEEE SOSE 2014</a> paper: <a href="files/Zhou-SOSE2014-MTracer.pdf">pdf</a>, <a href='files/Zhou-SOSE2014-MTracer-slides.pptx'>slides</a><p>
 <p>Also refer to <a href='http://mtracer.github.io/MTracer-Viz/'>MTracer-Viz</a> and <a href='http://mtracer.github.io/TraceBench/'>TraceBench</a>, or <a href='http://www.wsdream.net/mtracer-viz/'>view traces on line</a>.</p>
 
-<p><a name="start"></a><br></p>
+<a name="start"></a><br>
 
 <h2>
 <a name="getting-start" class="anchor" href="#getting-start"><span class="octicon octicon-link"></span></a>Getting Start</h2>
@@ -175,6 +177,92 @@
 <div>e) input some sentences on MonitorClient_2, where a sentence with word "bye" inside will terminal the demo.</div>
 
 <div>f) Scan the collected traces and related information in local browser with a url of "http://MonitorServer:8080/"</div>
+
+<br><a name="Storing"></a>
+<p></p>
+<h2>
+<a name="data-storing" class="anchor" href="#data-storing"><span class="octicon octicon-link"></span></a>Data Storing</h2>
+<div>Traces are stored in the form of events and edges. There are following four tables in MySQL for storing data.</div>
+
+<p></p>
+<table border="1" cellspacing="0" cellpadding="3">
+<tr>
+<th>Table</th>
+<th>Fields</th>
+<th>Description</th>
+</tr>
+<tr>
+<td rowspan="7">Event</td>
+<td>TraceID</td>
+<td>ID of the trace containing this event.</td>
+</tr>
+<tr>
+<td>NID</td>
+<td>Mentioned above.</td>
+</tr>
+<tr>
+<td>OpName</td>
+<td>Name of the operation recorded by this event.</td>
+</tr>
+<tr>
+<td>StartTime/EndTime</td>
+<td>Timestamps of starting/finishing the operation.</td>
+</tr>
+<tr>
+<td>HostAddress/HostName</td>
+<td>Host IP/Name of generating this event.</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td>Location of the operation inside the code, usually meaning class.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Some results of executing the operation, including exceptions.</td>
+</tr>
+<tr>
+<td rowspan="1">Edge</td>
+<td>TraceID/FatherNID/FatherStartTime/ChildNID</td>
+<td>Mentioned above.</td>
+</tr>
+<tr>
+<td rowspan="5">Trace</td>
+<td>TraceID</td>
+<td>Mentioned above.</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Name of the trace.</td>
+</tr>
+<tr>
+<td>NumEvents/NumEdges</td>
+<td>Number of events/edges included by this trace.</td>
+</tr>
+<tr>
+<td>FirstSeen/LastUpdated</td>
+<td>Time of first/last receiving the data in this trace on monitor server.</td>
+</tr>
+<tr>
+<td>StartTime/EndTime</td>
+<td>Timestamps of starting/finishing this event.</td>
+</tr>
+<tr>
+<td rowspan="3">Operation</td>
+<td>OpName</td>
+<td>Name of the operation, corresponding to the <em>OpName</em> field in <em>Event</em> table.</td>
+</tr>
+<tr>
+<td>Num</td>
+<td>Number of events recording this operation.</td>
+</tr>
+<tr>
+<td>MaxLatency/MinLatency/AverageLatency</td>
+<td>Maximal/minimal/average latency of this operation.</td>
+</tr>
+</table>
+<br>
+Data in <em>Trace</em> and <em>Operation</em> are the statistic information, which can be extracted from the <em>Event</em> and <em>Edge</em>. In other words, the <em>Event</em> and <em>Edge</em> record all needed data of traces.
+
 
 <p>• Contact zjw8612@gmail.com if any problem about MTracer.</p>
 </div>
