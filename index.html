@@ -39,27 +39,16 @@
 </div>
 <div>• <a href="#publications"> Publications </a>
 </div>
-<div>• <a href="#design"> Architecture </a>
-</div>
-<div>• <a href="#implemetation"> Implemetation </a>
-</div>
 <div>• <a href="#start"> Getting Start </a>
 </div>
-<div>      • <a href="#prepare"> 0. Prepare </a>
-</div>
-<div>      • <a href="#MTracer"> 1. Deploy MTracer </a>
-</div>
-<div>      • <a href="#MTracerViz"> 2. Deploy MTracer-Viz </a>
-</div>
-<div>      • <a href="#demo"> 3. Start Demo </a>
-</div>
+
 <hr>
 <a name="Overview"></a>
 <p></p>
 <h2>
 <a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h2>
 
-<p>MTracer is a white box-based trace-oriented monitoring platform, which is <em>lightweight</em> and <em>efficient</em>. MTracer adopts the client-server framework, just as <a href='http://www.x-trace.net/wiki/doku.php'>X-Trace</a>. A special recording mechanism is employed for improving the efficiency. The data are stored in <a href='http://www.mysql.com/'>MySQL</a> on the monitor server, where a parallel strategy and several optimizations are introduced to speed up the storing process. A web-based frontend for visualizing, called <a href='http://mtracer.github.io/MTracer-Viz/'>MTracer-Viz</a>, is also provided, and some advanced functions are integrated in this frontend to do deeper data analyses. Also, we collected a trace data set with MTracer, called <a href='http://mtracer.github.io/TraceBench/'>TraceBench</a>.</p>
+<p>MTracer is a white box-based trace-oriented monitoring platform, which is <em>lightweight</em> and <em>efficient</em>. MTracer adopts the client-server framework, just as <a href='http://www.x-trace.net/wiki/doku.php'>X-Trace</a> (Actually, we implement MTracer based on X-Trace). A special recording mechanism is employed for improving the efficiency. The data are stored in <a href='http://www.mysql.com/'>MySQL</a> on the monitor server, where a parallel strategy and several optimizations are introduced to speed up the storing process. A web-based frontend for visualizing, called <a href='http://mtracer.github.io/MTracer-Viz/'>MTracer-Viz</a>, is also provided, and some advanced functions are integrated in this frontend to do deeper data analyses. Also, we collected a trace data set with MTracer, called <a href='http://mtracer.github.io/TraceBench/'>TraceBench</a>.</p>
 
 <a name="publications"></a>
 <p></p>
@@ -67,19 +56,6 @@
 <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h2>
 <p><a href='http://sose2014.com/'>IEEE SOSE 2014</a> paper: <a href="files/Zhou-SOSE2014-MTracer.pdf">pdf</a>, <a href='files/Zhou-SOSE2014-MTracer-slides.pptx'>slides</a><p>
 <p>Also refer to <a href='http://mtracer.github.io/MTracer-Viz/'>MTracer-Viz</a> and <a href='http://mtracer.github.io/TraceBench/'>TraceBench</a>, or <a href='http://www.wsdream.net/mtracer-viz/'>view traces on line</a>.</p>
-
-<a name="architecture"></a>
-<h2>
-<a name="architecture" class="anchor" href="#architecture"><span class="octicon octicon-link"></span></a>Architecture</h2>
-<p>MTracer is similar to <a href='http://www.x-trace.net/wiki/doku.php'>X-Trace</a>, which adopts a client-server architecture. Differently, MTracer use a special recording mechanism and some storing optimizations, to improve the efficiency. Refer to the corresponding <a href="files/Zhou-SOSE2014-MTracer.pdf">paper</a> for more details.</p>
-
-
-
-<a name="implemetation"></a>
-<h2>
-<a name="implemetation" class="anchor" href="#implemetation"><span class="octicon octicon-link"></span></a>Implemetation</h2>
-
-<p>We implemented MTracer based on X-Trace [1]. So, many code files in this project are name with a "xtrace" inside. Data are stored in MySQL. The frontend is implemented with JSP and using GraphViz for visualization.</p>
 
 <p><a name="start"></a><br></p>
 
