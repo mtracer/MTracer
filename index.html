@@ -37,7 +37,9 @@
 </h1><p align="center">E-mail: zjw8612@gmail.com</p><p>
 </p><div>• <a href="#Overview"> Overview </a>
 </div>
-<div>• <a href="#publications"> publications </a>
+<div>• <a href="#publications"> Publications </a>
+</div>
+<div>• <a href="#architecture"> Architecture </a>
 </div>
 <div>• <a href="#implemetation"> Implemetation </a>
 </div>
@@ -65,6 +67,13 @@
 <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h2>
 <p><a href='http://sose2014.com/'>IEEE SOSE 2014</a> paper: <a href="files/Zhou-SOSE2014-MTracer.pdf">pdf</a>, <a href='files/Zhou-SOSE2014-MTracer-slides.pptx'>slides</a><p>
 <p>Also refer to <a href='http://mtracer.github.io/MTracer-Viz/'>MTracer-Viz</a> and <a href='http://mtracer.github.io/TraceBench/'>TraceBench</a>, or <a href='http://www.wsdream.net/mtracer-viz/'>view traces on line</a>.</p>
+
+<a name="architecture"></a>
+<h2>
+<a name="architecture" class="anchor" href="#architecture"><span class="octicon octicon-link"></span></a>Architecture</h2>
+<p>MTracer is similar to <a href='http://www.x-trace.net/wiki/doku.php'>X-Trace</a>, which adopts a client-server architecture. Differently, MTracer use a special recording mechanism and some storing optimizations, to improve the efficiency. Refer to <a href="files/Zhou-SOSE2014-MTracer.pdf">pdf</a> for more details.</p>
+
+
 
 <a name="implemetation"></a>
 <h2>
@@ -199,9 +208,6 @@
 <div>e) input some sentences on MonitorClient_2, where a sentence with word "bye" inside will terminal the demo.</div>
 
 <div>f) Scan the collected traces and related information in local browser with a url of "http://MonitorServer:8080/"</div>
-
-<hr>
-<p>[1] R. Fonseca, G. Porter, R. H. Katz, S. Shenker, and I. Stoica, "X-Trace: A pervasive network tracing framework," in Proc. of USENIX NSDI, 2007, pp. 271-284.</p>
 
 <p>• Contact zjw8612@gmail.com if any problem about MTracer.</p>
 </div>
